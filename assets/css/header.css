@@ -1,5 +1,5 @@
 header.header-bg{
-    background-color: #fff;
+    background-color: var(--cor-primaria);
     display: block;
     width: 100%;
     height: 100px;
@@ -35,9 +35,9 @@ header.header-bg{
 
 .header-nav .botao-nav{
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 400;
     margin-left: 20px;
-    color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 .header-nav a{
@@ -50,7 +50,7 @@ header.header-bg{
     display: block;
     height: 2px;
     width: 0px;
-    background: var(--cor-primaria);
+    background: var(--cor-secundaria);
     margin-top: 4px;
     transition: 0.3s;
     position: absolute;
@@ -66,14 +66,14 @@ header.header-bg{
 
 .botao-consulta{
     display: flex;
-    width: 320px;
+    width: 340px;
     justify-content: center;
-    background: linear-gradient(90deg, #011D4C 0%, #012766 100%);
-    color: #fff !important;
+    background: var(--cor-secundaria);
+    color: var(--cor-primaria) !important;
     padding: 10px 20px;
     border-radius: 6px;
     font-size: 1.2rem;
-    transition: 0.5s;
+    transition: 0.3s;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
     text-transform: uppercase;
     align-items: center;
@@ -82,4 +82,18 @@ header.header-bg{
 .botao-consulta i{
     font-size: 1.4rem;
     margin-right: 10px;
+}
+
+.botao-consulta span{
+    font-weight: 500;
+}
+
+.botao-consulta:hover{
+    background: #fff;
+}
+
+.linha{
+    color: rgba(0, 0, 0, 0.50);
+    height: 2px;
+    margin-bottom: 20px;
 }

@@ -1,0 +1,62 @@
+.tratamentos-bg{
+    padding: 80px;
+    background-color: #fff;
+ }
+ 
+ .tratamentos-content{
+     display: flex;
+     align-items: start;
+     gap: 40px;
+     justify-content: center;
+ }
+ 
+.tratamentos-info h1{
+    display: block;
+
+}
+
+.tratamentos-text{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+
+ .tratamentos-tipo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+ }
+ 
+ .tratamentos-tipo h1{
+     margin-bottom: 40px;
+ }
+ 
+ .about-span{
+     display: block;
+     margin-top: 40px;
+ 
+ }
+ 
+ .tratamentos-span i{
+    color: var(--cor-secundaria);
+    margin-right: 10px;
+
+ }
+ 
+ .tratamentos-img img{
+    width: 600px;
+    height: 100%;
+    object-fit: cover;
+    height: auto;
+    border-radius: 6px;
+ }
+
+
+/* CONTADOR */
+
+.contador-content{
+    padding: 40px;
+}
+ 
+ 

@@ -1,15 +1,17 @@
 .intro-bg{
     display: flex;
-    align-items: end;
+    align-items: start;
     height: 100vh;
+    background-color: var(--cor-primaria);
+
 }
 
 .intro-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: auto;
-    margin-top: auto;
+    margin-top: 140px;
+    
 }
 
 .intro-text{
@@ -22,6 +24,13 @@
 
 .intro-img img{
     object-fit: cover;
-    width: 500px;
-    height: auto;
+    height: 550px;
+    width: auto;
+}
+
+
+@media (max-width: 1400px){
+    .intro-img img{
+        height: 400px;
+    }
 }

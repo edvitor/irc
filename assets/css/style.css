@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import url(global.css);
+@import url(header.css);
+@import url(bootstrap.css);
+@import url(introducao.css);
+@import url(about.css);
+@import url(tratamento.css);
+
+
+@import url(./util/tipografia.css);
+
+
+:root{
+    --cor-primaria: #011D4C ;
+    --cor-primaria-light: #012766;
+    --cor-primaria-dark: #011333;
+
+    --cor-secundaria: #E5C74A;
+
+    --branco-1: #fff;
+    --branco-2: #F9FAFB;
+    --branco-3: #CDCDCD;
+
+    --dark-grey: #5E5E5E;
+
+}
+
+.bg-p{
+    background-color: var(--cor-primaria);
+}
+
+.bg-w{
+    background-color: var(--branco-1);
+}
+
+.bg-w{
+    background-color: var(--branco-2);
+}
+
+
+.text-p{
+    color: var(--cor-primaria);
+}
+
+.text-s{
+    color: var(--cor-secundaria);
+}
+
+.text-w{
+    color: #fff;
+}
+
+.text-w-2{
+    color: var(--branco-3);
+}
+
+

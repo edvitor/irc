@@ -1,7 +1,18 @@
 .about-bg{
-   padding: 80px;
     background-color: #F9FAFB;
+    padding: 80px;
+    position: relative;
+    z-index: -2;
 }
+
+.img-detail{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 350px;
+    z-index: -1;
+}
+
 
 .about-content{
     margin-top: 40px;
@@ -29,5 +40,6 @@
     width: 600px;
     height: auto;
     border-radius: 6px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.20);
 }
 
