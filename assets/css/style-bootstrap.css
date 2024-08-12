@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import url(global.css);
+@import url(header.css);
+@import url(bootstrap.css);
+@import url(introducao.css);
+@import url(about.css);
+
+
+@import url(./util/tipografia.css);
+
+
+:root{
+    --cor-primaria: #011D4C ;
+    --cor-primaria-light: #012766;
+    --cor-primaria-dark: #011333;
+
+    --cor-secundaria: #E5C74A;
+
+
+    --dark-grey: #5E5E5E;
+
+}
+
+
+.texto-primario{
+    color: var(--cor-primaria);
+}
+
+

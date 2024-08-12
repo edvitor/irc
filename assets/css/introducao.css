@@ -1,0 +1,27 @@
+.intro-bg{
+    display: flex;
+    align-items: end;
+    height: 100vh;
+}
+
+.intro-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.intro-text{
+    width: 700px;
+}
+
+.intro-text h2{
+    color: var(--dark-grey);
+}
+
+.intro-img img{
+    object-fit: cover;
+    width: 500px;
+    height: auto;
+}
