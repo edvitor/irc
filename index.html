@@ -21,49 +21,55 @@
     <title>Instituto Renato Carvalho</title>
 </head>
 <body>
-    <header class="header-bg">
-        <div class="header-content container">
-            <div class="header-logo">
-                <a href="#">
-                    <img class="logo-img" src="./assets/img/logo-irc.svg" alt="">
-                </a>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container">
+            <img class="logo-img" src="assets/img/logo-irc.svg" alt="">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tratamentos">Tratamentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
             </div>
-            <div class="header-nav">
-                <div>
-                    <a class="botao-nav" href="#inicio">Início</a>
-                    <a class="botao-nav" href="#sobre">Sobre</a>
-                    <a class="botao-nav" href="#tratamentos">Tratamentos</a>
-                    <a class="botao-nav" href="#contato">Contato</a>
-                </div>
+            <div>
+                <a class="botao-consulta-p font-1-m" href="">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </a>
+
             </div>
         </div>
-    </header>
+    </nav>
     
-    <!-- introducao -->
-    <main class="intro-bg">
-        <div class="intro-content container">
-            <div class="intro-text">
-                <h1 class="font-1-xxl-b text-w">A Solução Natural para Transformar sua Qualidade de Vida!</h1>
-                <p class="font-2-m text-w-2" style="margin-top: 20px;">Transforme sua qualidade de vida com a <strong class="text-s">Quiropraxia</strong> e <strong class="text-s">Fisioterapia</strong> para aliviar dores e promover uma saúde integral.</p>
-                
-                <div style="margin-top: 40px;">
+    <!-- Masthead-->
+    <header class="masthead" id="home">
+        <div class="intro-content container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-left reveal-txt">
+                <div class="align-self-end">
+                    <h1 class="font-1-xxl-b text-w">A Solução Natural para Transformar sua Qualidade de Vida!</h1>
+                    <!-- <hr class="divider" /> -->
+                </div>
+                <div class="align-self-baseline">
+                    <p class="font-2-m text-w-2" style="margin-top: 20px;">Transforme sua qualidade de vida com a <strong class="text-s">Quiropraxia</strong> e <strong class="text-s">Fisioterapia</strong> para aliviar dores e promover uma saúde integral.</p>
                     <a class="botao-consulta font-1-m" style="margin-top: 20px;" href="">
                         <i class="fa-brands fa-whatsapp"></i><span>Marque já sua Consulta!</span>
                     </a>
                 </div>
             </div>
-            <div class="intro-img">
+            <div class="intro-img reveal-img">
                 <img src="assets/img/home/quiro-home.png" alt="">
             </div>
         </div>
-    </main>
+    </header>
 
     <!-- sessão sobre -->
     <section class="about-bg">
         <img class="img-detail" src="./assets/img/irc-detail.svg" alt="">
 
 
-        <div class="about-content container">
+        <div class="about-content container" id="about">
             <div class="about-text">
                 <h1 class="about-title font-1-xl text-p">O que é o <strong>Instituto Renato Carvalho</strong>?</h1>
                 <p class="font-2-l">O Instituto Renato Carvalho é uma clínica de referência em quiropraxia, fundada pelo Dr. Renato Carvalho, um renomado professor e fisioterapeuta.</p>
@@ -148,13 +154,22 @@
             <p class="text-w font-1-l">Clientes Atendidos</p>
             </div>
 
+            <div class="text-w col-lg-3 col-6 text-center">
+                <i class="fa-solid fa-user-group font-1-xl"></i>
+                <br>
+            <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1" style="font-weight: 600;" class="purecounter font-1-l text-w"></span>
+            <p class="text-w font-1-l">Clientes Atendidos</p>
+            </div>
+
 
         </div>
 
         </div>
     </section>
     <!-- End Counts Section -->
-
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/reveal.js" defer></script>
+    <script src="./js/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <script>
         new PureCounter();
