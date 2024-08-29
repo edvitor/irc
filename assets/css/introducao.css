@@ -1,8 +1,5 @@
 .intro-bg{
-    display: flex;
-    align-items: start;
-    height: 100vh;
-    background-color: var(--cor-primaria);
+    position: relative;
 }
 
 .intro-content{
@@ -21,9 +18,17 @@
 }
 
 .intro-img img{
+    position: relative;
     object-fit: cover;
     height: 550px;
     width: auto;
+}
+
+.detail-img-intro{
+    position: absolute;
+    font-size: 3rem;
+    color: var(--cor-secundaria);
+    opacity: 0.8;
 }
 
 
