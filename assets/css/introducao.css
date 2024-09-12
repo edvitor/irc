@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-top: 100px */
 }
 
 .intro-text{
@@ -31,13 +30,24 @@
     opacity: 0.8;
 }
 
-
 @media (max-width: 1400px){
     .intro-img img{
         height: 400px;
     }
 }
 
+@media (max-width: 993px){
+    .intro-content{
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    .intro-img,
+    .detail-img-intro{
+        display: none;
+    }
+}
 
 .reveal-txt, .reveal-img{
     visibility: hidden;

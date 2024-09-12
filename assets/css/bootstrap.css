@@ -11428,7 +11428,7 @@ hr.divider-light {
 }
 
 #mainNav {
-  background-color: transparent;
+  background-color: #011D4C;
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
@@ -11487,10 +11487,11 @@ hr.divider-light {
 }
 
 header.masthead {
+  height: 100vh;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  /* background: linear-gradient(91deg, rgba(22, 75, 124, 0.76) 0.62%, rgba(9, 44, 76, 0.74) 65.6%), url("/assets/img/fundo-teste.png"); */
-  background: #011D4C;
+  background: linear-gradient(91deg, #011D4C 0.62%, #011D4C 65.6%), url("../img/fundo-teste2.png");
+  /* background: #011D4C, url("../assets/img/fundo-teste.png"); */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

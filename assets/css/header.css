@@ -65,7 +65,6 @@ header.header-bg{
 /* BOTÃO DE CONSULTA */
 
 .botao-consulta{
-    display: flex;
     width: 340px;
     justify-content: center;
     background: var(--cor-secundaria);
