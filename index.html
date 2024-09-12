@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
@@ -18,23 +25,40 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>IRC</title>
 </head>
+
 <body>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container">
             <img class="logo-img" src="assets/img/logo-irc.svg" alt="">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="fa-solid fa-bars botao-menu"></i></button>
+
+            <!-- <div>
+                <a class="botao-consulta-p font-1-m" href="">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </a>
+
+            </div> -->
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
@@ -43,35 +67,29 @@
                     <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
                 </ul>
             </div>
-            <div>
-                <a class="botao-consulta-p font-1-m" href="">
-                    <i class="fa-solid fa-calendar-days"></i>
-                </a>
-
-            </div>
         </div>
     </nav>
-    
+
     <!-- Masthead-->
     <header class="masthead intro-bg" id="home">
-        <!-- <img class="img-detail reveal-img" style="z-index: 1; height: 400px; bottom: 0; opacity: 1;" src="./assets/img/coluna irc.svg" alt=""> -->
 
         <div class="intro-content container px-4 px-lg-5 h-100">
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-left reveal-txt">
                 <div class="align-self-end">
                     <h1 class="font-1-xxl-b text-w">A Solução Natural para Transformar sua Qualidade de Vida!</h1>
                 </div>
-                <div class="align-self-baseline">
-                    <p class="font-2-m text-w-2" style="margin-top: 20px;">Transforme sua qualidade de vida com a <strong class="text-s">Quiropraxia</strong> e <strong class="text-s">Fisioterapia</strong> para aliviar dores e promover uma saúde integral.</p>
-                    
-                    <a class="botao-consulta font-1-m" href="">
-                        <i class="fa-brands fa-whatsapp"></i><span>Marque já sua Consulta!</span>
-                    </a>
+                <div class="intro-desc align-self-baseline">
+                    <p class="font-2-m text-w-2" style="margin-top: 20px;">Transforme sua qualidade de vida com a
+                        <strong class="text-s">Quiropraxia</strong> e <strong class="text-s">Fisioterapia</strong> para
+                        aliviar dores e promover uma saúde integral.</p>
+                        <a class="botao-consulta font-1-m" href="">
+                            <i class="fa-brands fa-whatsapp"></i><span>Marque já sua Consulta!</span>
+                        </a>
                 </div>
             </div>
             <div class="intro-img reveal-img">
                 <img src="assets/img/home/quiro-home.png" alt="">
-                
+
                 <i class="fa-solid fa-plus detail-img-intro" style="top: -50px; left: 100px;"></i>
                 <i class="fa-solid fa-stethoscope detail-img-intro" style="bottom: 0px; left: -50px;"></i>
                 <i class="fa-solid fa-house-medical detail-img-intro" style="right: -80px; top: 200px;"></i>
@@ -85,24 +103,28 @@
         <img class="img-detail" src="./assets/img/irc-detail.svg" alt="">
 
         <div class="about-content container" id="about">
-            
+
             <div class="about-img">
                 <img src="assets/img/about-img.jpg" alt="">
             </div>
             <div class="about-text">
                 <h1 class="about-title font-1-xl text-p">O que é o <strong>Instituto Renato Carvalho</strong>?</h1>
-                <p class="font-2-l">Fundado pelo professor e fisioterapeuta Dr. Renato Carvalho, o IRC é referência em tratamentos quiropráticos. <br><br>    
-                Especializados em dores na coluna e no corpo, utilizamos técnicas comprovadas para promover a saúde e o bem-estar dos nossos pacientes. Nossa equipe multidisciplinar trabalha de forma personalizada para cada caso, oferecendo diagnósticos precisos e tratamentos eficazes.</p>
+                <p class="font-2-l">Fundado pelo professor e fisioterapeuta Dr. Renato Carvalho, o IRC é referência em
+                    tratamentos quiropráticos. <br><br>
+                    Especializados em dores na coluna e no corpo, utilizamos técnicas comprovadas para promover a saúde
+                    e o bem-estar dos nossos pacientes. Nossa equipe multidisciplinar trabalha de forma personalizada
+                    para cada caso, oferecendo diagnósticos precisos e tratamentos eficazes.</p>
 
-                <span class="about-span font-2-m"><i class="fa-solid fa-medal"></i>Eleita a melhor clínica de fisioterapia de Nilópolis em 2022 e 2023.</span>
+                <span class="about-span font-2-m"><i class="fa-solid fa-medal"></i>Eleita a melhor clínica de
+                    fisioterapia de Nilópolis em 2022 e 2023.</span>
             </div>
-            
+
         </div>
 
     </section>
     <!-- fim sessão sobre -->
 
-  
+
     <!-- sessão tratamentos -->
     <!-- <section class="tratamentos-bg">
         
@@ -142,251 +164,280 @@
         </div>
 
     </section> -->
-        
-       <!-- LISTA DE TRATAMENTOS -->
-    <article class="tratamentos-lista container">
-        <!-- TITULO -->
-        
-        <h1 class="about-title font-1-xl text-p" style="font-weight: 600;">Nossos principais Tratamentos</h1>
-        
-        <div class="tratamentos-grid">
-            <!-- Fisioterapia Especializada -->
-            <div class="tratamentos-card grid-tratamento1">
-                <div class="card-img">
-                    <img src="assets/img/tratamentos/imagemfisio.jpg" alt="Fisioterapia Especializada">
-                </div>
-                
-                <div class="card-titulo">
-                    <h2 class="tratamentos-span font-2-l-b text-p">Fisioterapia Especializada</h2>
-                </div>
 
-                <div class="card-legenda">
-                    <p class="font-2-m cor-8 text-black"></i>Tratamentos personalizados para promover a reabilitação completa.</p>
-                </div>
+    <!-- LISTA DE TRATAMENTOS -->
+    <section class="tratamentos-lista">
 
-                <!-- <div class="card-link">
-                    <a class="card-button font-1-m" href="">
-                        <span>Agende sua Consulta</span>
-                    </a>
-                </div> -->
-            </div>
-            
-            <!-- Recuperação Avançada de Atletas -->
-            <div class="tratamentos-card grid-tratamento2">
-                <div class="card-img">
-                    <img src="assets/img/tratamentos/atletas.jpg" alt="Recuperação Avançada de Atletas">
-                </div>
-                
-                <div class="card-titulo">
-                    <h2 class="tratamentos-span font-2-l-b text-p">Recuperação Avançada de Atletas</h2>
-                </div>
-
-                <div class="card-legenda">
-                    <p class="font-2-m cor-8 text-black"></i>Técnicas modernas para acelerar o retorno ao esporte.</p>
-                </div>
-
-                <!-- <div class="card-link">
-                    <a class="card-button font-1-m" href="">
-                        <span>Agende sua Consulta</span>
-                    </a>
-                </div> -->
-            </div>
-            
-            <!-- Baropodometria -->
-            <div class="tratamentos-card grid-tratamento3">
-                <div class="card-img">
-                    <img src="assets/img/tratamentos/imagemfisio.jpg" alt="Baropodometria">
-                </div>
-                
-                <div class="card-titulo">
-                    <h2 class="tratamentos-span font-2-l-b text-p">Baropodometria</h2>
-                </div>
-
-                <div class="card-legenda">
-                    <p class="font-2-m cor-8 text-black"></i>Análise precisa da pressão plantar para correção postural.</p>
-                </div>
-
-                <!-- <div class="card-link">
-                    <a class="card-button font-1-m" href="">
-                        <span>Agende sua Consulta</span>
-                    </a>
-                </div> -->
-            </div>
-
-            <!-- Posturologia -->
-            <div class="tratamentos-card grid-tratamento4">
-                <div class="card-img">
-                    <img src="assets/img/tratamentos/imagemfisio.jpg" alt="Posturologia">
-                </div>
-                
-                <div class="card-titulo">
-                    <h2 class="tratamentos-span font-2-l-b text-p">Posturologia</h2>
-                </div>
-
-                <div class="card-legenda">
-                    <p class="font-2-m cor-8 text-black"></i>Avaliação global do corpo para melhorar a postura e prevenir lesões.</p>
-                </div>
-            </div>
-
-            <!-- Quiropraxia -->
-            <div class="tratamentos-card grid-tratamento5">
-                <div class="card-img">
-                    <img src="assets/img/tratamentos/imagemfisio.jpg" alt="Quiropraxia">
-                </div>
-                
-                <div class="card-titulo">
-                    <h2 class="tratamentos-span font-2-l-b text-p">Quiropraxia</h2>
-                </div>
-
-                <div class="card-legenda">
-                    <p class="font-2-m cor-8 text-black"></i>Alinhamento da coluna para alívio de dores e maior mobilidade.</p>
-                </div>
-            </div>
-
-            <!-- Osteopatia -->
-            <div class="tratamentos-card grid-tratamento6">
-                <div class="card-img">
-                    <img src="assets/img/tratamentos/imagemfisio.jpg" alt="Osteopatia">
-                </div>
-                
-                <div class="card-titulo">
-                    <h2 class="tratamentos-span font-2-l-b text-p">Osteopatia</h2>
-                </div>
-
-                <div class="card-legenda">
-                    <p class="font-2-m cor-8 text-black"></i>Terapia manual para restaurar o equilíbrio estrutural do corpo.</p>
-                </div>
-            </div>
-
-            <!-- Acupuntura -->
-            <div class="tratamentos-card grid-tratamento7">
-                <div class="card-img">
-                    <img src="assets/img/tratamentos/imagemfisio.jpg" alt="Acupuntura">
-                </div>
-                
-                <div class="card-titulo">
-                    <h2 class="tratamentos-span font-2-l-b text-p">Acupuntura</h2>
-                </div>
-
-                <div class="card-legenda">
-                    <p class="font-2-m cor-8 text-black"></i>Tratamento milenar para o alívio de dores e o equilíbrio energético.</p>
-                </div>
-            </div>
-
-            <!-- RPG -->
-            <div class="tratamentos-card grid-tratamento8">
-                <div class="card-img">
-                    <img src="assets/img/tratamentos/imagemfisio.jpg" alt="RPG">
-                </div>
-                
-                <div class="card-titulo">
-                    <h2 class="tratamentos-span font-2-l-b text-p">RPG</h2>
-                </div>
-
-                <div class="card-legenda">
-                    <p class="font-2-m cor-8 text-black"></i>Reeducação Postural Global para corrigir desequilíbrios e dores crônicas.</p>
-                </div>
-            </div>
-
-            <!-- Hidroterapia -->
-            <div class="tratamentos-card grid-tratamento9">
-                <div class="card-img">
-                    <img src="assets/img/tratamentos/imagemfisio.jpg" alt="Hidroterapia">
-                </div>
-                
-                <div class="card-titulo">
-                    <h2 class="tratamentos-span font-2-l-b text-p">Hidroterapia</h2>
-                </div>
-
-                <div class="card-legenda">
-                    <p class="font-2-m cor-8 text-black"></i>Exercícios na água que melhoram a recuperação e a mobilidade.</p>
-                </div>
-            </div>
-
-            <!-- Reequilíbrio Postural -->
-            <div class="tratamentos-card grid-tratamento10">
-                <div class="card-img">
-                    <img src="assets/img/tratamentos/imagemfisio.jpg" alt="Reequilíbrio Postural">
-                </div>
-                
-                <div class="card-titulo">
-                    <h2 class="tratamentos-span font-2-l-b text-p">Reequilíbrio Postural</h2>
-                </div>
-
-                <div class="card-legenda">
-                    <p class="font-2-m cor-8 text-black"></i>Técnicas para alinhar e fortalecer a postura corporal.</p>
-                </div>
-            </div>
-
-            <!-- Palmilhas Funcionais -->
-            <div class="tratamentos-card grid-tratamento11">
-                <div class="card-img">
-                    <img src="assets/img/tratamentos/imagemfisio.jpg" alt="Palmilhas Funcionais">
-                </div>
-                
-                <div class="card-titulo">
-                    <h2 class="tratamentos-span font-2-l-b text-p">Palmilhas Funcionais</h2>
-                </div>
-
-                <div class="card-legenda">
-                    <p class="font-2-m cor-8 text-black"></i>Correção da pisada e suporte ideal para os pés.</p>
-                </div>
-            </div>
-
-            <!-- Pilates -->
-            <div class="tratamentos-card grid-tratamento12">
-                <div class="card-img">
-                    <img src="assets/img/tratamentos/imagemfisio.jpg" alt="Pilates">
-                </div>
-                
-                <div class="card-titulo">
-                    <h2 class="tratamentos-span font-2-l-b text-p">Pilates</h2>
-                </div>
-
-                <div class="card-legenda">
-                    <p class="font-2-m cor-8 text-black"></i>Fortalecimento do corpo com foco no equilíbrio, flexibilidade e força.</p>
-                </div>
-            </div>
-
+        <div class="tratamentos-titulo container reveal-txt">
+            <h1 class=" font-1-xl text-w" style="font-weight: 600;">Nossos principais Tratamentos</h1>
         </div>
-    </article>
+
+        <div class="card__container swiper container reveal-img">
+            <div class="card__content">
+                <div class="swiper-wrapper">
+
+                    <!-- FISIOTERAPIA ESPECIALIZADA -->
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/img/tratamentos/imagemfisio.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">Fisioterapia Especializada</h3>
+                            <p class="card__description">
+                                Tratamentos personalizados para promover a reabilitação completa.
+                            </p>
+
+                            <a href="#" class="card__button">Veja Mais</a>
+                        </div>
+                    </article>
+
+                    <!-- RECUPERAÇÃO AVANÇADA DE ATLETAS -->
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/img/tratamentos/atletas.jpg" alt="image" class="card__img">
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">Recuperação Avançada de Atletas</h3>
+                            <p class="card__description">
+                                Técnicas modernas para acelerar o retorno ao esporte.
+                            </p>
+
+                            <a href="#" class="card__button">Veja Mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Baropodometria -->
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/img/tratamentos/baropodometria.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">Baropodometria</h3>
+                            <p class="card__description">
+                                Análise precisa da pressão plantar para correção postural.
+                            </p>
+
+                            <a href="#" class="card__button">Veja Mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Posturologia -->
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/img/tratamentos/posturologia.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+
+                        <div class="card__data">
+                            <h3 class="card__name">Posturologia</h3>
+                            <p class="card__description">
+                                Avaliação global do corpo para melhorar a postura e prevenir lesões.
+                            </p>
+
+                            <a href="#" class="card__button">Veja Mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Quiropraxia -->
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/img/tratamentos/quiropraxia.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">Quiropraxia</h3>
+                            <p class="card__description">
+                                Alinhamento da coluna para alívio de dores e maior mobilidade.
+                            </p>
+
+                            <a href="#" class="card__button">Veja Mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Osteopatia -->
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/img/tratamentos/osteopatia.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">Osteopatia</h3>
+                            <p class="card__description">
+                                Terapia manual para restaurar o equilíbrio estrutural do corpo.
+                            </p>
+
+                            <a href="#" class="card__button">Veja Mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Acupuntura -->
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/img/tratamentos/acupuntura.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">Acupuntura</h3>
+                            <p class="card__description">
+                                Tratamento milenar para o alívio de dores e o equilíbrio energético.
+                            </p>
+
+                            <a href="#" class="card__button">Veja Mais</a>
+                        </div>
+                    </article>
+
+                    <!-- RPG -->
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/img/tratamentos/rpg.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">RPG</h3>
+                            <p class="card__description">
+                                Reeducação Postural Global para corrigir desequilíbrios e dores crônicas.
+                            </p>
+
+                            <a href="#" class="card__button">Veja Mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Hidroterapia -->
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/img/tratamentos/hidroterapia.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">Hidroterapia</h3>
+                            <p class="card__description">
+                                Exercícios na água que melhoram a recuperação e a mobilidade.
+                            </p>
+
+                            <a href="#" class="card__button">Veja Mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Reequilíbrio Postural -->
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/img/tratamentos/reequilibropostural.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">Reequilíbrio Postural</h3>
+                            <p class="card__description">
+                                Técnicas para alinhar e fortalecer a postura corporal.
+                            </p>
+
+                            <a href="#" class="card__button">Veja Mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Palmilhas Funcionais -->
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/img/tratamentos/palmilhas.png" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">Palmilhas Funcionais</h3>
+                            <p class="card__description">
+                                Correção da pisada e suporte ideal para os pés.
+                            </p>
+
+                            <a href="#" class="card__button">Veja Mais</a>
+                        </div>
+                    </article>
+
+                    <!-- Pilates -->
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/img/tratamentos/pilates.jpg" alt="image" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">Pilates</h3>
+                            <p class="card__description">
+                                Fortalecimento do corpo com foco no equilíbrio, flexibilidade e força.
+                            </p>
+
+                            <a href="#" class="card__button">Veja Mais</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next">
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
 
     <!-- contador -->
     <section id="counts" class="bg-p counts">
         <div class="container">
 
-        <div class="contador-content row counters">
+            <div class="contador-content row counters">
 
-            <div class="text-w col-lg-3 col-6 text-center">
-                <i class="fa-solid fa-user-group font-1-xl"></i>
-                <br>
-            <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1" style="font-weight: 600;" class="purecounter font-1-l text-w"></span>
-            <p class="text-w font-1-l">Clientes Atendidos</p>
+                <div class="text-w col-lg-3 col-6 text-center">
+                    <i class="fa-solid fa-user-group font-1-xl"></i>
+                    <br>
+                    <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1"
+                        style="font-weight: 600;" class="purecounter font-1-l text-w"></span>
+                    <p class="text-w font-1-l">Clientes Atendidos</p>
+                </div>
+
+                <div class="text-w col-lg-3 col-6 text-center">
+                    <i class="fa-solid fa-user-group font-1-xl"></i>
+                    <br>
+                    <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1"
+                        style="font-weight: 600;" class="purecounter font-1-l text-w"></span>
+                    <p class="text-w font-1-l">Clientes Atendidos</p>
+                </div>
+
+                <div class="text-w col-lg-3 col-6 text-center">
+                    <i class="fa-solid fa-user-group font-1-xl"></i>
+                    <br>
+                    <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1"
+                        style="font-weight: 600;" class="purecounter font-1-l text-w"></span>
+                    <p class="text-w font-1-l">Clientes Atendidos</p>
+                </div>
+
+                <div class="text-w col-lg-3 col-6 text-center">
+                    <i class="fa-solid fa-user-group font-1-xl"></i>
+                    <br>
+                    <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1"
+                        style="font-weight: 600;" class="purecounter font-1-l text-w"></span>
+                    <p class="text-w font-1-l">Clientes Atendidos</p>
+                </div>
+
+
             </div>
-
-            <div class="text-w col-lg-3 col-6 text-center">
-                <i class="fa-solid fa-user-group font-1-xl"></i>
-                <br>
-            <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1" style="font-weight: 600;" class="purecounter font-1-l text-w"></span>
-            <p class="text-w font-1-l">Clientes Atendidos</p>
-            </div>
-
-            <div class="text-w col-lg-3 col-6 text-center">
-                <i class="fa-solid fa-user-group font-1-xl"></i>
-                <br>
-            <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1" style="font-weight: 600;" class="purecounter font-1-l text-w"></span>
-            <p class="text-w font-1-l">Clientes Atendidos</p>
-            </div>
-
-            <div class="text-w col-lg-3 col-6 text-center">
-                <i class="fa-solid fa-user-group font-1-xl"></i>
-                <br>
-            <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1" style="font-weight: 600;" class="purecounter font-1-l text-w"></span>
-            <p class="text-w font-1-l">Clientes Atendidos</p>
-            </div>
-
-
-        </div>
 
         </div>
     </section>
@@ -394,11 +445,17 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/reveal.js" defer></script>
     <script src="./js/script.js" defer></script>
+    
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <script>
         new PureCounter();
     </script>
 
-
 </body>
+
 </html>
