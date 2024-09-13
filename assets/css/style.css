@@ -5,7 +5,9 @@
 @import url(introducao.css);
 @import url(about.css);
 @import url(tratamento.css);
-@import url(carrossel.css);
+@import url(contador.css);
+@import url(depoimento.css);
+@import url(consulta.css);
 
 
 @import url(./util/tipografia.css);

@@ -1,0 +1,106 @@
+.depoimento-bg{
+    background-color: #F9FAFB;
+    padding: 80px;
+}
+
+.depoimento-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.depoimento{
+    width: 600px;
+    margin-top: 20px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+}
+
+.depoimento i{
+    font-size: 3rem;
+    color: var(--cor-primaria);
+    opacity: 0.3;
+}
+
+.depoimento-perfil{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.depoimento-perfil img{
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    width: 60px;
+    height: 60px;
+    border: solid 1px;
+    border-color: var(--cor-primaria);
+    border-radius: 200px;
+}
+
+.link-depoimentos{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+/* BOTAO */
+.depoimento-botao{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    align-items: center;
+}
+
+.depoimento-botao span{
+    font-weight: 400;
+}
+
+.depoimento-botao:hover{
+    background: var(--cor-primaria);
+    color: var(--branco-1);
+}
+
+
+
+@media (max-width: 1420px){
+    .depoimento{
+        width: 500px;
+    }
+}
+
+
+@media (max-width: 1220px){
+    .depoimento{
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 1020px){
+    .depoimento{
+        width: 100%;
+    }
+
+    .depoimento-bg h1{
+        text-align: center;
+    }
+    .depoimento-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}
