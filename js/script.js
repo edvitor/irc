@@ -49,30 +49,53 @@ window.addEventListener('DOMContentLoaded', event => {
 
 })
 
-/*=============== SWIPER JS ===============*/
-let swiperCards = new Swiper(".card__content", {
-    loop: true,
-    spaceBetween: 32,
-    grabCursor: true,
-  
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-  
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  
-    breakpoints:{
-      600: {
-        slidesPerView: 2,
-      },
-      968: {
-        slidesPerView: 3,
-      },
-    },
+
+/*=============== SLICK JS ===============*/
+$('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    centerMode: true,
+    centerPadding: '60px',
+    focusOnSelect: true,
+    responsive: [
+        {
+            breakpoint: 993,
+            settings: {
+              slidesToShow: 1,
+              dots: false,
+              arrows: false,
+              centerPadding: '30px'
+            }
+          }
+      ]
+  });
+
+  $('.autoplay').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    swipe: false,
+    touchMove: false,
+    autoplaySpeed: 1500,
+    responsive: [
+        {
+            breakpoint: 1401,
+            settings: {
+              slidesToShow: 2,
+              dots: false,
+              arrows: false,
+            }
+          },
+        
+        {
+            breakpoint: 993,
+            settings: {
+              slidesToShow: 1,
+              dots: false,
+              arrows: false,
+            }
+          }
+      ]
   });
 

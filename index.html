@@ -8,37 +8,37 @@
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
 
-    <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
     <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
 
     <link rel="stylesheet" href="./assets/css/style.css">
+
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- SLICK -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 
     <title>IRC</title>
 </head>
@@ -53,16 +53,10 @@
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation"><i class="fa-solid fa-bars botao-menu"></i></button>
 
-            <!-- <div>
-                <a class="botao-consulta-p font-1-m" href="">
-                    <i class="fa-solid fa-calendar-days"></i>
-                </a>
-
-            </div> -->
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link" href="#tratamentos">Tratamentos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
                 </ul>
@@ -74,9 +68,11 @@
     <header class="masthead intro-bg" id="home">
 
         <div class="intro-content container px-4 px-lg-5 h-100">
+            
+            
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-left reveal-txt">
                 <div class="align-self-end">
-                    <h1 class="font-1-xxl-b text-w">A Solução Natural para Transformar sua Qualidade de Vida!</h1>
+                    <h1 class="font-1-xxl text-w">A Solução Natural para Transformar sua Qualidade de Vida!</h1>
                 </div>
                 <div class="intro-desc align-self-baseline">
                     <p class="font-2-m text-w-2" style="margin-top: 20px;">Transforme sua qualidade de vida com a
@@ -99,26 +95,39 @@
     </header>
 
     <!-- sessão sobre -->
-    <section class="about-bg">
+    <section id="sobre">
         
         <div class="container">
             <img class="img-detail" src="./assets/img/irc-detail.svg" alt="">
     
-            <div class="about-content" id="about">
+            <div class="row justify-content-center align-items-center py-6 flex-wrap-reverse">
     
-                <div class="about-img">
-                    <img src="assets/img/about-img.jpg" alt="">
+                <div class="about-img col-lg-6">
+                    <img class="rounded w-100" src="assets/img/about-img.jpg" alt="">
                 </div>
-                <div class="about-text">
-                    <h1 class="about-title font-1-xl text-p">O que é o <strong>Instituto Renato Carvalho</strong>?</h1>
+                <div class="about-text col-lg-6">
+                    <h1 class="about-title font-1-xl text-p m-0">O que é o <strong>Instituto Renato Carvalho</strong>?</h1>
+                    <hr class="w-50 border-top border-3 border-secondary opacity-100">
+                    <br>
                     <p class="font-2-l">Fundado pelo professor e fisioterapeuta Dr. Renato Carvalho, o IRC é referência em
                         tratamentos quiropráticos. <br><br>
                         Especializados em dores na coluna e no corpo, utilizamos técnicas comprovadas para promover a saúde
                         e o bem-estar dos nossos pacientes. Nossa equipe multidisciplinar trabalha de forma personalizada
                         para cada caso, oferecendo diagnósticos precisos e tratamentos eficazes.</p>
-    
-                    <span class="about-span font-2-m"><i class="fa-solid fa-medal"></i>Eleita a melhor clínica de
-                        fisioterapia de Nilópolis em 2022 e 2023.</span>
+                    <div class="d-flex align-items-center mb-5">
+                        <div>
+                            <i class="fa-solid fa-medal fs-1 gradient-secondary pe-3"></i>
+                        </div>
+                        <div class="">
+                            <span class="font-1-s">Eleita a <strong>Melhor clínica de Fisioterapia</strong> de Nilópolis em <strong>2022</strong>, <strong>2023</strong> e <strong>2024</strong></span>
+                            <hr class="w-50 m-0 mt-1 border-top border-2 border-secondary opacity-100">
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="d-flex">
+                    </div>
                 </div>
     
             </div>
@@ -128,335 +137,420 @@
     <!-- fim sessão sobre -->
 
     <!-- LISTA DE TRATAMENTOS -->
-    <section class="tratamentos-lista">
-
-        <div class="tratamentos-titulo container reveal-txt">
-            <h1 class=" font-1-xl text-w" style="font-weight: 600;">Nossos principais Tratamentos</h1>
-        </div>
-
-        <div class="card__container swiper container reveal-img">
-            <div class="card__content">
-                <div class="swiper-wrapper">
-
-                    <!-- FISIOTERAPIA ESPECIALIZADA -->
-                    <article class="card__article swiper-slide">
-                        <div class="card__image">
-                            <img src="./assets/img/tratamentos/imagemfisio.jpg" alt="image" class="card__img">
-                            <div class="card__shadow"></div>
-                        </div>
-
-                        <div class="card__data">
-                            <h3 class="card__name">Fisioterapia Especializada</h3>
-                            <p class="card__description">
-                                Tratamentos personalizados para promover a reabilitação completa.
-                            </p>
-
-                            <a href="#" class="card__button">Veja Mais</a>
-                        </div>
-                    </article>
-
-                    <!-- RECUPERAÇÃO AVANÇADA DE ATLETAS -->
-                    <article class="card__article swiper-slide">
-                        <div class="card__image">
-                            <img src="./assets/img/tratamentos/atletas.jpg" alt="image" class="card__img">
-                        </div>
-
-                        <div class="card__data">
-                            <h3 class="card__name">Recuperação Avançada de Atletas</h3>
-                            <p class="card__description">
-                                Técnicas modernas para acelerar o retorno ao esporte.
-                            </p>
-
-                            <a href="#" class="card__button">Veja Mais</a>
-                        </div>
-                    </article>
-
-                    <!-- Baropodometria -->
-                    <article class="card__article swiper-slide">
-                        <div class="card__image">
-                            <img src="./assets/img/tratamentos/baropodometria.jpg" alt="image" class="card__img">
-                            <div class="card__shadow"></div>
-                        </div>
-
-                        <div class="card__data">
-                            <h3 class="card__name">Baropodometria</h3>
-                            <p class="card__description">
-                                Análise precisa da pressão plantar para correção postural.
-                            </p>
-
-                            <a href="#" class="card__button">Veja Mais</a>
-                        </div>
-                    </article>
-
-                    <!-- Posturologia -->
-                    <article class="card__article swiper-slide">
-                        <div class="card__image">
-                            <img src="./assets/img/tratamentos/posturologia.jpg" alt="image" class="card__img">
-                            <div class="card__shadow"></div>
-                        </div>
-
-
-                        <div class="card__data">
-                            <h3 class="card__name">Posturologia</h3>
-                            <p class="card__description">
-                                Avaliação global do corpo para melhorar a postura e prevenir lesões.
-                            </p>
-
-                            <a href="#" class="card__button">Veja Mais</a>
-                        </div>
-                    </article>
-
-                    <!-- Quiropraxia -->
-                    <article class="card__article swiper-slide">
-                        <div class="card__image">
-                            <img src="./assets/img/tratamentos/quiropraxia.jpg" alt="image" class="card__img">
-                            <div class="card__shadow"></div>
-                        </div>
-
-                        <div class="card__data">
-                            <h3 class="card__name">Quiropraxia</h3>
-                            <p class="card__description">
-                                Alinhamento da coluna para alívio de dores e maior mobilidade.
-                            </p>
-
-                            <a href="#" class="card__button">Veja Mais</a>
-                        </div>
-                    </article>
-
-                    <!-- Osteopatia -->
-                    <article class="card__article swiper-slide">
-                        <div class="card__image">
-                            <img src="./assets/img/tratamentos/osteopatia.jpg" alt="image" class="card__img">
-                            <div class="card__shadow"></div>
-                        </div>
-
-                        <div class="card__data">
-                            <h3 class="card__name">Osteopatia</h3>
-                            <p class="card__description">
-                                Terapia manual para restaurar o equilíbrio estrutural do corpo.
-                            </p>
-
-                            <a href="#" class="card__button">Veja Mais</a>
-                        </div>
-                    </article>
-
-                    <!-- Acupuntura -->
-                    <article class="card__article swiper-slide">
-                        <div class="card__image">
-                            <img src="./assets/img/tratamentos/acupuntura.jpg" alt="image" class="card__img">
-                            <div class="card__shadow"></div>
-                        </div>
-
-                        <div class="card__data">
-                            <h3 class="card__name">Acupuntura</h3>
-                            <p class="card__description">
-                                Tratamento milenar para o alívio de dores e o equilíbrio energético.
-                            </p>
-
-                            <a href="#" class="card__button">Veja Mais</a>
-                        </div>
-                    </article>
-
-                    <!-- RPG -->
-                    <article class="card__article swiper-slide">
-                        <div class="card__image">
-                            <img src="./assets/img/tratamentos/rpg.jpg" alt="image" class="card__img">
-                            <div class="card__shadow"></div>
-                        </div>
-
-                        <div class="card__data">
-                            <h3 class="card__name">RPG</h3>
-                            <p class="card__description">
-                                Reeducação Postural Global para corrigir desequilíbrios e dores crônicas.
-                            </p>
-
-                            <a href="#" class="card__button">Veja Mais</a>
-                        </div>
-                    </article>
-
-                    <!-- Hidroterapia -->
-                    <article class="card__article swiper-slide">
-                        <div class="card__image">
-                            <img src="./assets/img/tratamentos/hidroterapia.jpg" alt="image" class="card__img">
-                            <div class="card__shadow"></div>
-                        </div>
-
-                        <div class="card__data">
-                            <h3 class="card__name">Hidroterapia</h3>
-                            <p class="card__description">
-                                Exercícios na água que melhoram a recuperação e a mobilidade.
-                            </p>
-
-                            <a href="#" class="card__button">Veja Mais</a>
-                        </div>
-                    </article>
-
-                    <!-- Reequilíbrio Postural -->
-                    <article class="card__article swiper-slide">
-                        <div class="card__image">
-                            <img src="./assets/img/tratamentos/reequilibropostural.jpg" alt="image" class="card__img">
-                            <div class="card__shadow"></div>
-                        </div>
-
-                        <div class="card__data">
-                            <h3 class="card__name">Reequilíbrio Postural</h3>
-                            <p class="card__description">
-                                Técnicas para alinhar e fortalecer a postura corporal.
-                            </p>
-
-                            <a href="#" class="card__button">Veja Mais</a>
-                        </div>
-                    </article>
-
-                    <!-- Palmilhas Funcionais -->
-                    <article class="card__article swiper-slide">
-                        <div class="card__image">
-                            <img src="./assets/img/tratamentos/palmilhas.jpg" alt="image" class="card__img">
-                            <div class="card__shadow"></div>
-                        </div>
-
-                        <div class="card__data">
-                            <h3 class="card__name">Palmilhas Funcionais</h3>
-                            <p class="card__description">
-                                Correção da pisada e suporte ideal para os pés.
-                            </p>
-
-                            <a href="#" class="card__button">Veja Mais</a>
-                        </div>
-                    </article>
-
-                    <!-- Pilates -->
-                    <article class="card__article swiper-slide">
-                        <div class="card__image">
-                            <img src="./assets/img/tratamentos/pilates.jpg" alt="image" class="card__img">
-                            <div class="card__shadow"></div>
-                        </div>
-
-                        <div class="card__data">
-                            <h3 class="card__name">Pilates</h3>
-                            <p class="card__description">
-                                Fortalecimento do corpo com foco no equilíbrio, flexibilidade e força.
-                            </p>
-
-                            <a href="#" class="card__button">Veja Mais</a>
-                        </div>
-                    </article>
-
-                </div>
+    <section id="tratamentos" class="bg-p">
+        <div class="container py-6">
+            <div class="reveal-txt">
+                <h1 class=" font-1-xl text-w text-center" style="font-weight: 600;">Nossos principais Tratamentos</h1>
+                <hr class="w-25 mx-auto border-top border-3 border-secondary opacity-100">
             </div>
 
-            <!-- Navigation buttons -->
-            <div class="swiper-button-next">
-                <i class="ri-arrow-right-s-line"></i>
-            </div>
-
-            <div class="swiper-button-prev">
-                <i class="ri-arrow-left-s-line"></i>
-            </div>
-
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
-        </div>
-
-    </section>
-
-    <!-- CONSULTA -->
-    <section class="consulta-bg">
+            <div class="tratamento-content">
         
-        <div class="container">
-            <div class="consulta-content" id="consultas">
+                <div class="tratamento-carrossel">
                 
-                <div class="consulta">
-                    <h1 class="font-1-xl text-p text-end" style="margin-bottom: 40px;">Agende sua <strong>Consulta</strong></h1>
-
-                    <p class="font-2-l text-p text-end">Cuide da sua saúde com quem entende.<br>
-                        Agende sua consulta e comece sua jornada para uma vida mais saudável e livre de dores!</p><br>
-
-                    <div class="consulta-contato">
+                    <div class="slider-nav">
                         
-                        <div class="consulta-botao">
-                            <a href="">
-                                <i class="fa-brands fa-whatsapp" style="font-size: 2.3rem;"></i><span class="font-2-l-b">Whatsapp</span>
-                            </a>
-                        </div>
-
-                        <div class="consulta-botao">
-                            <a href="">
-                                <i class="fa-solid fa-phone" style="font-size: 2.3rem;"></i>
-                            
-                                <div class="telefone-info">
+                        <!-- quiropraxia -->
+                        <div>
+                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
                                 
-                                    <h5 class="font-2-m" style="margin: 0px;">Telefone</h5>
-                                    <span class="font-1-m-b">21 99015-9271</span>
-                                
+                                <div class="tratamentos-img">
+                                    <img class="w-100 cover" src="./assets/img/tratamentos/quiropraxia.jpg" alt="">
                                 </div>
-                            </a>
+    
+                                <div class="d-block p-4">
+                                    <h2 class="font-1-m-b text-center m-0">Quiropraxia</h2>
+                                </div>
+    
+                                <div class="d-block px-4">
+                                    <p class="font-2-s text-black-2 m-0 text-center">Alinhamento da coluna para alívio de dores e maior mobilidade.
+                                    </p>
+                                </div>
+    
+                                <div class="d-flex align-items-end justify-content-center p-4">
+                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#quiropraxia">
+                                        <a class="font-2-s text-p">Veja mais</a>
+                                    </button>
+                                </div>
+                            
+                            </div>
                         </div>
+                        <!-- FIM quiropraxia -->
+    
+                        <!-- acupuntura -->
+                        <div>
+                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
+                                
+                                <div class="tratamentos-img">
+                                    <img class="w-100 cover" src="./assets/img/tratamentos/acupuntura.jpg" alt="">
+                                </div>
+    
+                                <div class="d-block p-4">
+                                    <h2 class="font-1-m-b text-center m-0">Acupuntura</h2>
+                                </div>
+    
+                                <div class="d-block px-4">
+                                    <p class="font-2-s text-black-2 m-0 text-center">Tratamento milenar para o alívio de dores e o equilíbrio energético.</p>
+                                </div>
+    
+                                <div class="d-flex align-items-end justify-content-center p-4">
+                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#acupuntura">
+                                        <a class="font-2-s text-p">Veja mais</a>
+                                    </button>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- FIM acupuntura -->
+    
+                        <!-- rpg -->
+                        <div>
+                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
+                                
+                                <div class="tratamentos-img">
+                                    <img class="w-100 cover" src="./assets/img/tratamentos/rpg.jpg" alt="">
+                                </div>
+    
+                                <div class="d-block p-4">
+                                    <h2 class="font-1-m-b text-center m-0">RPG</h2>
+                                </div>
+    
+                                <div class="d-block px-4">
+                                    <p class="font-2-s text-black-2 m-0 text-center">Reeducação Postural Global para corrigir desequilíbrios e dores crônicas.</p>
+                                </div>
+    
+                                <div class="d-flex align-items-end justify-content-center p-4">
+                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#rpg">
+                                        <a class="font-2-s text-p">Veja mais</a>
+                                    </button>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- FIM rpg -->
+    
+                        <!-- hidroterapia -->
+                        <div>
+                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
+                                
+                                <div class="tratamentos-img">
+                                    <img class="w-100 cover" src="./assets/img/tratamentos/hidroterapia.jpg" alt="">
+                                </div>
+    
+                                <div class="d-block p-4">
+                                    <h2 class="font-1-m-b text-center m-0">Hidroterapia</h2>
+                                </div>
+    
+                                <div class="d-block px-4">
+                                    <p class="font-2-s text-black-2 m-0 text-center">Exercícios na água que melhoram a recuperação e a mobilidade.</p>
+                                </div>
+    
+                                <div class="d-flex align-items-end justify-content-center p-4">
+                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#hidroterapia">
+                                        <a class="font-2-s text-p">Veja mais</a>
+                                    </button>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- FIM hidroterapia -->
+                        
+                        <!-- reqpostural -->
+                        <div>
+                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
+                                
+                                <div class="tratamentos-img">
+                                    <img class="w-100 cover" src="./assets/img/tratamentos/reequilibropostural.jpg" alt="">
+                                </div>
+    
+                                <div class="d-block p-4">
+                                    <h2 class="font-1-m-b text-center m-0">Reequilíbrio Postural</h2>
+                                </div>
+    
+                                <div class="d-block px-4">
+                                    <p class="font-2-s text-black-2 m-0 text-center">Técnicas para alinhar e fortalecer a postura corporal.</p>
+                                </div>
+    
+                                <div class="d-flex align-items-end justify-content-center p-4">
+                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#reqpostural">
+                                        <a class="font-2-s text-p">Veja mais</a>
+                                    </button>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- FIM reqpostural -->
+    
+                        <!-- palmilhas -->
+                        <div>
+                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
+                                
+                                <div class="tratamentos-img">
+                                    <img class="w-100 cover" src="./assets/img/tratamentos/palmilhas.jpg" alt="">
+                                </div>
+    
+                                <div class="d-block p-4">
+                                    <h2 class="font-1-m-b text-center m-0">Palmilhas Funcionais</h2>
+                                </div>
+    
+                                <div class="d-block px-4">
+                                    <p class="font-2-s text-black-2 m-0 text-center">Correção da pisada e suporte ideal para os pés.
+                                    </p>
+                                </div>
+    
+                                <div class="d-flex align-items-end justify-content-center p-4">
+                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#palmilhas">
+                                        <a class="font-2-s text-p">Veja mais</a>
+                                    </button>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- FIM palmilhas -->
+    
+                        <!-- pilates -->
+                        <div>
+                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
+                                
+                                <div class="tratamentos-img">
+                                    <img class="w-100 cover" src="./assets/img/tratamentos/pilates.jpg" alt="">
+                                </div>
+    
+                                <div class="d-block p-4">
+                                    <h2 class="font-1-m-b text-center m-0">Pilates</h2>
+                                </div>
+    
+                                <div class="d-block px-4">
+                                    <p class="font-2-s text-black-2 m-0 text-center">Fortalecimento do corpo com foco no equilíbrio, flexibilidade e força.
+                                    </p>
+                                </div>
+    
+                                <div class="d-flex align-items-end justify-content-center p-4">
+                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#pilates">
+                                        <a class="font-2-s text-p">Veja mais</a>
+                                    </button>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- FIM pilates -->
+    
+                        <!-- fisio espec -->
+                        <div>
+                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
+                                
+                                <div class="tratamentos-img">
+                                    <img class="w-100 cover" src="./assets/img/tratamentos/imagemfisio.jpg" alt="">
+                                </div>
+    
+                                <div class="d-block p-4">
+                                    <h2 class="font-1-m-b text-center m-0">Fisioterapia Especializada</h2>
+                                </div>
+    
+                                <div class="d-block px-4">
+                                    <p class="font-2-s text-black-2 m-0 text-center">Tratamentos personalizados para promover a reabilitação completa.
+                                    </p>
+                                </div>
+    
+                                <div class="d-flex align-items-end justify-content-center p-4">
+                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#fisioespec">
+                                        <a class="font-2-s text-p">Veja mais</a>
+                                    </button>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- FIM fisio espec -->
+    
+                        <!-- recup atletas -->
+                        <div>
+                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
+                                
+                                <div class="tratamentos-img">
+                                    <img class="w-100 cover" src="./assets/img/tratamentos/atletas.jpg" alt="">
+                                </div>
+    
+                                <div class="d-block p-4">
+                                    <h2 class="font-1-m-b text-center m-0">Recuperação Avançada de Atletas</h2>
+                                </div>
+    
+                                <div class="d-block px-4">
+                                    <p class="font-2-s text-black-2 m-0 text-center">Técnicas modernas para acelerar o retorno ao esporte.
+                                    </p>
+                                </div>
+    
+                                <div class="d-flex align-items-end justify-content-center p-4">
+                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#recupatletas">
+                                        <a class="font-2-s text-p">Veja mais</a>
+                                    </button>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- FIM recup atletas -->
+    
+                        <!-- baropodometria -->
+                        <div>
+                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
+                                
+                                <div class="tratamentos-img">
+                                    <img class="w-100 cover" src="./assets/img/tratamentos/baropodometria.jpg" alt="">
+                                </div>
+    
+                                <div class="d-block p-4">
+                                    <h2 class="font-1-m-b text-center m-0">Baropodometria</h2>
+                                </div>
+    
+                                <div class="d-block px-4">
+                                    <p class="font-2-s text-black-2 m-0 text-center">Análise precisa da pressão plantar para correção postural.
+                                    </p>
+                                </div>
+    
+                                <div class="d-flex align-items-end justify-content-center p-4">
+                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#baropodometria">
+                                        <a class="font-2-s text-p">Veja mais</a>
+                                    </button>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- FIM baropodometria -->
+    
+                        <!-- posturologia -->
+                        <div>
+                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
+                                
+                                <div class="tratamentos-img">
+                                    <img class="w-100 cover" src="./assets/img/tratamentos/posturologia.jpg" alt="">
+                                </div>
+    
+                                <div class="d-block p-4">
+                                    <h2 class="font-1-m-b text-center m-0">Posturologia</h2>
+                                </div>
+    
+                                <div class="d-block px-4">
+                                    <p class="font-2-s text-black-2 m-0 text-center">Avaliação global do corpo para melhorar a postura e prevenir lesões.
+                                    </p>
+                                </div>
+    
+                                <div class="d-flex align-items-end justify-content-center p-4">
+                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#posturologia">
+                                        <a class="font-2-s text-p">Veja mais</a>
+                                    </button>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- FIM posturologia -->
+    
+                        <!-- Osteopatia -->
+                        <div>
+                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
+                                
+                                <div class="tratamentos-img">
+                                    <img class="w-100 cover" src="./assets/img/tratamentos/osteopatia.jpg" alt="">
+                                </div>
+    
+                                <div class="d-block p-4">
+                                    <h2 class="font-1-m-b text-center m-0">Osteopatia</h2>
+                                </div>
+    
+                                <div class="d-block px-4">
+                                    <p class="font-2-s text-black-2 m-0 text-center">Terapia manual para restaurar o equilíbrio estrutural do corpo.
+                                    </p>
+                                </div>
+    
+                                <div class="d-flex align-items-end justify-content-center p-4">
+                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#osteopatia">
+                                        <a class="font-2-s text-p">Veja mais</a>
+                                    </button>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- FIM Osteopatia -->
+    
+    
                     </div>
-
-                    <br>
-                    <!-- <a class="depoimento-botao font-1-m" href="">
-                        <span>Agendar minha consulta</span><i class="fa-solid fa-share-from-square"></i>
-                    </a> -->
                 </div>
-                
-                <div class="consulta">
-                    <div class="consulta-img">
-                        <img src="assets/img/consulta.jpg" alt="">
-                    </div>
-                </div>
-
             </div>
         </div>
 
+
     </section>
+    <!-- fim tratamentos -->
 
     <!-- contador -->
-    <section id="counts" class="bg-p counts">
-    <div class="container">
+    <section id="counts" class="bg-w-2 counts">
+    <div class="container py-6">
 
-        <div class="contador-content row counters">
+        <div class="row justify-content-center gap-5 flex-wrap">
 
-            <div class="text-w col-lg-3 col-6 text-center">
-                <i class="fa-solid fa-user-group font-1-xxl "></i>
+            <div class="col-lg-2 col-6 text-center py-4">
+                <i class="fa-solid fa-user-group font-1-xxl gradient-secondary"></i>
                 <br>
                 <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1"
-                    style="font-weight: 600; font-size: 3rem;" class="purecounter font-2-l  text-w"></span>
-                <p class="text-w font-2-l ">Clientes Atendidos</p>
+                    style="font-weight: 700;" class="purecounter font-1-m fs-1 text-p"></span>
+                <p class="text-p font-2-m m-0">Clientes Atendidos</p>
             </div>
 
-            <div class="text-w col-lg-3 col-6 text-center">
-                <i class="fa-solid fa-calendar-days font-1-xxl"></i>
+            <div class="col-lg-2 col-6 text-center py-4">
+                <i class="fa-solid fa-calendar-days font-1-xxl  gradient-secondary"></i>
                 <br>
                 <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1"
-                    style="font-weight: 600; font-size: 3rem;" class="purecounter font-2-l  text-w"></span>
-                <p class="text-w font-2-l ">Anos de Experiência</p>
+                    style="font-weight: 700;" class="purecounter font-1-m fs-1 text-p"></span>
+                <p class="text-p font-2-m m-0">Anos de Experiência</p>
             </div>
 
-            <div class="text-w col-lg-3 col-6 text-center">
-                <i class="fa-solid fa-square-check font-1-xxl"></i>
+            <div class="col-lg-2 col-6 text-center py-4">
+                <i class="fa-solid fa-square-check font-1-xxl  gradient-secondary"></i>
                 <br>
                 <span data-purecounter-start="0" data-purecounter-end="13000" data-purecounter-duration="1"
-                    style="font-weight: 600; font-size: 3rem;" class="purecounter font-2-l text-w"></span>
-                <p class="text-w font-2-l ">Sessões Realizadas</p>
+                    style="font-weight: 700;" class="purecounter font-1-m fs-1 text-p"></span>
+                <p class="text-p font-2-m m-0">Sessões Realizadas</p>
             </div>
 
-            <div class="text-w col-lg-3 col-6 text-center">
-                <i class="fa-solid fa-medal font-1-xxl"></i>
+            <div class="col-lg-2 col-6 text-center py-4">
+                <i class="fa-solid fa-medal font-1-xxl gradient-secondary"></i>
                 <br>
-                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" data-purecounter-suffix="%" style="font-weight: 600; font-size: 3rem;"  class="purecounter font-2-l  text-w">%</span>
-                <p class="text-w font-2-l ">Indice de Aprovação</p>
+                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" data-purecounter-suffix="%" style="font-weight: 700;"  class="purecounter font-1-m fs-1  text-p">%</span>
+                <p class="text-p font-2-m m-0">Indice de Aprovação</p>
             </div>
-
-
         </div>
 
     </div>
     </section>
+    <!-- fim contador -->
 
+    <!-- sessão metodologia -->
+    <section class="bg-white">
+    
+        <div class="container">
+            <div class="row justify-content-center align-items-center py-6" id="metodologia">
+    
+                <div class="about-text col-lg-6">
+                    <h1 class="font-1-xl text-p m-0">Nossa <strong>Metodologia</strong>.</h1>
+                    <hr class="w-25 border-top border-3 border-secondary opacity-100">
+                    <br>
+                    <p class="font-2-l m-0">A metodologia do Instituto Renato Carvalho é focada na correção de disfunções do sistema neuromusculoesquelético, especialmente da coluna vertebral, com o objetivo de melhorar a saúde geral do paciente. Utilizando técnicas manuais de alta precisão e manipulações seguras, ele busca restaurar a mobilidade da coluna e aliviar dores, promovendo bem-estar físico e funcional. O tratamento é voltado para identificar a causa raiz das disfunções, atuando de forma rápida e eficaz, e frequentemente envolve o uso de instrumentos específicos da quiropraxia.
+                    <br><br>
+                    Os pacientes, ao perceberem melhorias na postura, na qualidade do sono, no controle do estresse e na vitalidade, acabam recorrendo ao tratamento de forma contínua, o que reflete os benefícios abrangentes proporcionados pela metodologia quiroprática.
+                    </p>
+                    <br><br>
+                </div>
+                <div class="about-img col-lg-6">
+                    <img class="rounded w-100" src="assets/img/consulta.jpg" alt="">
+
+                </div>
+  
+            </div>
+        </div>
+
+    </section>
+    <!-- fim metodologia -->
 
     <!-- depoimentos -->
-    <section class="depoimento-bg">
+    <section class="depoimento-bg p-6">
         
         <div class="container">
             
@@ -539,6 +633,101 @@
 
     </section>
 
+    <!-- CONTATO -->
+    <section class="bg-white">
+        
+        <div class="container">
+            <div class="" id="contato">
+                <div class="d-block">
+                    <h1 class="font-1-xl text-p text-center pt-6">Venha fazer uma visita!</h1>
+                </div>
+                
+                <hr class="w-25 mx-auto py-2 border-top border-3 border-secondary opacity-100">
+
+                <div class="d-flex justify-content-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.9152306665337!2d-43.421636023766915!3d-22.80560473426456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99613601d4e321%3A0x27612c4c934712e9!2sCURSO%20DE%20QUIROPRAXIA%20DO%20INSTITUTO%20RENATO%20CARVALHO!5e0!3m2!1spt-BR!2sbr!4v1728316972591!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-4"></iframe>
+                </div>
+                <br>
+                <p class="font-2-l text-p text-center m-0">
+                    Cuide da sua saúde com quem realmente entende.
+                    <br>
+                    Agende sua consulta e dê início à sua jornada rumo a uma vida mais saudável e sem dores. 
+                    <br>
+                    <strong>Fale conosco agora</strong>!
+                </p>
+                <br>
+
+                <div class="row justify-content-center pb-6">
+                    <div class="consulta-contato my-4 px-5 flex-wrap">
+                        
+                        <div class="consulta-botao border-bottom border-2 border-secondary">
+                            <a class="text-p justify-content-center" href="">
+                                <i class="fa-brands fa-whatsapp fs-2"></i><span class="font-2-xl"><strong>WhatsApp</strong></span>
+                            </a>
+                        </div>
+
+                        <div class="consulta-botao border-bottom border-2 border-secondary">
+                            <a class="text-p justify-content-center" href="">
+                                <i class="fa-solid fa-phone fs-2"></i>
+                            
+                                <div class="telefone-info">
+                                
+                                    <h5 class="font-2-s m-0">Telefone</h5>
+                                    <span class="font-2-xl m-0"><strong>21 99015-9271</strong></span>
+                                
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="bg-p">
+        <div class="container">
+            <div class="row py-6 gap-5 align-items-start" id="metodologia">
+    
+                <div class="about-text col-lg-1 my-auto">
+                    <img src="assets/img/logo-irc-branca.svg" style="width: 80px;" alt="">
+                </div>
+
+                <div class="about-text col-lg-2">
+                    <h5 class="text-white font-m-b m-0 mb-4"><span class="border-bottom border-2 border-secondary">Localização</span></h5>
+                    <p class="text-white font-2-s m-0">R. Mario de Araújo, 131 - Nº 915, Sala 21 - Centro, Nilópolis - RJ, 26525-131</p>
+                </div>
+
+                <div class="about-text col-lg-2">
+                    <h5 class="text-white font-m-b m-0 mb-4"><span class="border-bottom border-2 border-secondary">Contato</span></h5>
+                    <a class="text-white font-2-s m-0" href="#">
+                        (21) 99015-9271</a>
+                    <br>
+                    <a class="text-white font-2-s m-0" href="#"> 
+                        (21) 3039-0593</a>
+                </div>
+                <div class="col-lg-5">
+                    <h5 class="text-white font-m-b m-0 mb-4"><span class="border-bottom border-2 border-secondary">Redes Sociais</span></h5>
+                    <a class="text-white font-2-s m-0 px-2 py-1" href="#">
+                        <i class="fa-brands fa-facebook fs-5 me-2"></i>Facebook
+                    </a>
+                    <a class="text-white font-2-s m-0 px-3 py-2" href="#">
+                        <i class="fa-brands fa-instagram fs-5 me-2"></i>Instagram
+                    </a>
+                    <a class="text-white font-2-s m-0 px-3 py-2" href="#">
+                        <i class="fa-brands fa-linkedin fs-5 me-2"></i>Linkedin
+                    </a>
+    
+                </div>
+            </div>
+        </div>
+        <div class="d-flex bg-gradient-secondary p-4">
+            <p class="m-0 mx-auto">Copyright © 2024 - INSTITUTO RENATO CARVALHO. Todos os direitos reservados. CNPJ 27.664.977/0001-60
+            </p>
+        </div>
+    </footer>
+
     <!-- End Counts Section -->
     <script src="https://unpkg.com/scrollreveal" defer></script>
     <script src="./js/reveal.js" defer></script>
@@ -550,7 +739,10 @@
     <!-- SWIPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
-    
+    <!-- SLICK -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <script>
         new PureCounter();

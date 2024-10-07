@@ -7261,12 +7261,12 @@ textarea.form-control-lg {
 
 .border-primary {
   --bs-border-opacity: 1;
-  border-color: #0F2D49 !important;
+  border-color: var(--cor-primaria) !important;
 }
 
 .border-secondary {
   --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-secondary-rgb), var(--bs-border-opacity)) !important;
+  border-color: var(--cor-secundaria-2) !important;
 }
 
 .border-success {
@@ -7813,6 +7813,9 @@ textarea.form-control-lg {
 .p-5 {
   padding: 3rem !important;
 }
+.p-6{
+  padding: 4rem !important;
+}
 
 .px-0 {
   padding-right: 0 !important;
@@ -7842,6 +7845,11 @@ textarea.form-control-lg {
 .px-5 {
   padding-right: 3rem !important;
   padding-left: 3rem !important;
+}
+
+.px-6 {
+  padding-right: 4rem !important;
+  padding-left: 4rem !important;
 }
 
 .py-0 {
@@ -7874,6 +7882,11 @@ textarea.form-control-lg {
   padding-bottom: 3rem !important;
 }
 
+.py-6 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
 .pt-0 {
   padding-top: 0 !important;
 }
@@ -7896,6 +7909,10 @@ textarea.form-control-lg {
 
 .pt-5 {
   padding-top: 3rem !important;
+}
+
+.pt-6 {
+  padding-top: 4rem !important;
 }
 
 .pe-0 {
@@ -7922,6 +7939,10 @@ textarea.form-control-lg {
   padding-right: 3rem !important;
 }
 
+.pe-6 {
+  padding-right: 4rem !important;
+}
+
 .pb-0 {
   padding-bottom: 0 !important;
 }
@@ -7946,6 +7967,10 @@ textarea.form-control-lg {
   padding-bottom: 3rem !important;
 }
 
+.pb-6 {
+  padding-bottom: 4rem !important;
+}
+
 .ps-0 {
   padding-left: 0 !important;
 }
@@ -7968,6 +7993,10 @@ textarea.form-control-lg {
 
 .ps-5 {
   padding-left: 3rem !important;
+}
+
+.ps-6 {
+  padding-left: 4rem !important;
 }
 
 .gap-0 {
@@ -11498,7 +11527,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(91deg, #011D4C 0.62%, #011D4C 65.6%), url("../img/fundo-teste2.png");
+  background: linear-gradient(91deg, #011D4C 0.62%, #011D4C 65.6%);
   /* background: #011D4C, url("../assets/img/fundo-teste.png"); */
   background-position: center;
   background-repeat: no-repeat;

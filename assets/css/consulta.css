@@ -19,7 +19,7 @@
 .consulta-contato{
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -27,8 +27,8 @@
 .consulta-botao{
     display: flex;
     justify-content: center;
-    height: 50px;
-    width: 200px;
+    width: 15rem;
+    height: 4rem;
 }
 
 .consulta-botao > a{
@@ -37,21 +37,15 @@
     text-decoration: none;
     justify-content: left;
     align-items: center;
-    column-gap: 16px;
+    column-gap: 0.8rem;
     color: var(--cor-primaria);
     width: 100%;
     transition: 0.3s;
 }
 
 .consulta-botao > a:hover{
-    color: var(--cor-secundaria);
+    color: var(--cor-secundaria-3);
 }
-
-
-.consulta-botao:first-child{
-    border-right: solid 1px var(--cor-primaria);
-}
-
 
 .consulta-img img{
     width: 600px;
