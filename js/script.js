@@ -63,8 +63,8 @@ $('.slider-nav').slick({
             breakpoint: 993,
             settings: {
               slidesToShow: 1,
-              dots: false,
-              arrows: false,
+              dots: true,
+              arrows: true,
               centerPadding: '30px'
             }
           }

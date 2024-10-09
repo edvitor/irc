@@ -110,6 +110,21 @@ padding: 0 15px;
   opacity: 1; /* Transparência da bolinha ativa */
 }
 
+@media (max-width:580px){
+  .slick-arrow{
+    /* margin: 0 0.8rem; */
+  }
+   .slick-prev{
+    left: -6px !important;
+    z-index: 1000;
+   }
+   .slick-next{
+    right: -6px !important;
+    z-index: 1000;
+   }
+}
+
+
 @media (max-width:470px){
   .autoplay-carrossel img{
       width: 250px;
