@@ -27,6 +27,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -48,17 +51,23 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container  px-4 px-lg-5">
             <img class="logo-img" src="assets/img/logo-irc.svg" alt="">
+
+            <button class="btn text-s fs-4" id="botao-sidebar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><i class="fa-solid fa-bars botao-menu"></i></button>
+                aria-label="Toggle navigation"><i class="fa-solid fa-bars botao-menu"></i></button> -->
 
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link" href="#tratamentos">Tratamentos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#metodologia">Metodologia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-item"><a class="tratamento-btn text-p ms-2" style="font-weight: 500;">Agendar Consulta</a></li>
                 </ul>
             </div>
         </div>
@@ -79,7 +88,7 @@
                         <strong class="text-s">Quiropraxia</strong> e <strong class="text-s">Fisioterapia</strong> para
                         aliviar dores e promover uma saúde integral.</p>
                         <a class="botao-consulta font-1-m" href="">
-                            <i class="fa-brands fa-whatsapp"></i><span>Marque já sua Consulta!</span>
+                            <i class="fa-brands fa-whatsapp"></i><span class="font-2-l">Marque já sua Consulta!</span>
                         </a>
                 </div>
             </div>
@@ -119,7 +128,7 @@
                             <i class="fa-solid fa-medal fs-1 gradient-secondary pe-3"></i>
                         </div>
                         <div class="">
-                            <span class="font-1-s">Eleita a <strong>Melhor clínica de Fisioterapia</strong> de Nilópolis em <strong>2022</strong>, <strong>2023</strong> e <strong>2024</strong></span>
+                            <span class="font-2-s">Eleita a <strong>Melhor clínica de Fisioterapia</strong> de Nilópolis em <strong>2022</strong>, <strong>2023</strong> e <strong>2024</strong></span>
                             <hr class="w-50 m-0 mt-1 border-top border-2 border-secondary opacity-100">
                             
                         </div>
@@ -634,7 +643,7 @@
     </section>
 
     <!-- CONTATO -->
-    <section class="bg-white">
+    <section class="bg-white" id="contato">
         
         <div class="container">
             <div class="" id="contato">
@@ -727,6 +736,71 @@
             </p>
         </div>
     </footer>
+
+    <!-- MENU LATERAL -->
+    <div class="offcanvas offcanvas-end bg-p w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header border-bottom border-3 border-secondary">
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark fs-5"></i></button>
+        </div>
+
+
+
+        <div class="offcanvas-body px-0 bg-white">
+            
+            <div class="px-2" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <button type="button" class="btn w-100" data-bs-dismiss="offcanvas">
+                            <a class="d-flex justify-content-between text-p px-2 my-2" href="#home">Início
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn w-100" data-bs-dismiss="offcanvas">
+                            <a class="d-flex justify-content-between text-p px-2 my-2" href="#sobre">Sobre
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn w-100" data-bs-dismiss="offcanvas">
+                            <a class="d-flex justify-content-between text-p px-2 my-2" href="#tratamentos">Tratamentos
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn w-100" data-bs-dismiss="offcanvas">
+                            <a class="d-flex justify-content-between text-p px-2 my-2" href="#metodologia">Metodologia
+                                <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn w-100" data-bs-dismiss="offcanvas">
+                            <a class="d-flex justify-content-between text-p px-2 my-2" href="#contato">Contato
+                            <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <hr class="mx-0 border-top border-1 border-primary opacity-100">
+        </div>
+
+
+        <div class="offcanvas-end py-5">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                <li class="nav-item mx-auto">
+                    <a class="tratamento-btn text-p ms-2">Agendar Consulta</a>
+                </li>
+            </ul>
+        </div>
+
+        
+    </div>
+    <!-- FIM MENU LATERAL -->
 
     <!-- End Counts Section -->
     <script src="https://unpkg.com/scrollreveal" defer></script>

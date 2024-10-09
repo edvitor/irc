@@ -65,6 +65,12 @@ header.header-bg{
 }
 
 
+.botao-nav i{
+    outline: none;
+    border: none;
+    color: --branco-1 !important;
+}
+
 
 /* BOTÃO DE CONSULTA */
 
@@ -79,6 +85,7 @@ header.header-bg{
     transition: 0.3s;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
     align-items: center;
+    cursor: pointer;
 }
 
 .botao-consulta i{

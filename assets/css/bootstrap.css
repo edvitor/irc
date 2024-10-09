@@ -2885,9 +2885,9 @@ textarea.form-control-lg {
   }
 }
 .btn:hover {
-  color: var(--bs-btn-hover-color);
+  color: var(--branco-1);
   background-color: var(--bs-btn-hover-bg);
-  border-color: var(--bs-btn-hover-border-color);
+  border-color: transparent;
 }
 .btn-check + .btn:hover {
   color: var(--bs-btn-color);
@@ -3712,7 +3712,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #B3A04C;
+  color: var(--cor-secundaria);
 }
 .nav-link.disabled {
   color: var(--bs-nav-link-disabled-color);
@@ -5224,16 +5224,17 @@ textarea.form-control-lg {
   width: 1em;
   height: 1em;
   padding: 0.25em 0.25em;
-  color: #000;
-  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+  color: #fff;
+  background: transparent;
   border: 0;
   border-radius: 0.375rem;
-  opacity: 0.5;
+  opacity: 1;
+  transition: 0.3s;
 }
 .btn-close:hover {
-  color: #000;
+  color: var(--cor-secundaria);
   text-decoration: none;
-  opacity: 0.75;
+  opacity: 1;
 }
 .btn-close:focus {
   outline: 0;

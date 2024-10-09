@@ -39,6 +39,7 @@
   padding: 10px 16px;
   border-radius: 4px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .tratamento-btn:hover{

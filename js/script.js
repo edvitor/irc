@@ -83,8 +83,8 @@ $('.slider-nav').slick({
             breakpoint: 1401,
             settings: {
               slidesToShow: 2,
-              dots: false,
-              arrows: false,
+              dots: true,
+              arrows: true,
             }
           },
         
@@ -92,8 +92,8 @@ $('.slider-nav').slick({
             breakpoint: 993,
             settings: {
               slidesToShow: 1,
-              dots: false,
-              arrows: false,
+              dots: true,
+              arrows: true,
             }
           }
       ]
