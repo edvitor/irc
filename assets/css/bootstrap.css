@@ -5883,6 +5883,7 @@ textarea.form-control-lg {
 .carousel-inner {
   position: relative;
   width: 100%;
+  height: 500px;
   overflow: hidden;
 }
 .carousel-inner::after {
@@ -5896,6 +5897,7 @@ textarea.form-control-lg {
   display: none;
   float: left;
   width: 100%;
+  overflow: hidden;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -11468,7 +11470,9 @@ hr.divider-light {
 
 #mainNav {
   background-color: #011D4C;
-  transition: background-color 0.2s ease;
+  border-bottom: solid 1px;
+  border-color: #fff;
+  transition: background-color 0.3s ease, border-bottom 0.2s ease-in;
 }
 #mainNav .navbar-brand {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11490,7 +11494,8 @@ hr.divider-light {
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
-    background-color: transparent;
+    border-bottom: none;
+    border-color: transparent;
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);

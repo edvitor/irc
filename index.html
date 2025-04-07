@@ -17,7 +17,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- FONTS -->
@@ -37,8 +37,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- SLICK -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
 
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
@@ -74,17 +74,27 @@
     </nav>
 
     <!-- Masthead-->
-    <header class="masthead intro-bg" id="home">
+    <header class="introducao" id="home">
+        <div class="intro-content intro-bg d-flex justify-content-center">
+            
+            <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-touch="false" data-bs-ride="carousel">
+            
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/introducao.jpg" class="intro-img" style="object-position: center -140px;" alt="...">
+                      </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/introducao-2.jpg" class="intro-img" style="object-position: center -200px;" alt="...">
+                  </div>
+                </div>
+            </div>
 
-        <div class="intro-content container px-4 px-lg-5 h-100">
-            
-            
-            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-left reveal-txt">
+            <div class="container position-absolute top-0 justify-content-center px-lg-5 text-left reveal-txt" style="margin-top:90px; z-index: 3 !important">
                 <div class="align-self-end">
                     <h1 class="font-1-xxl text-w">A Solução Natural para Transformar sua Qualidade de Vida!</h1>
                 </div>
                 <div class="intro-desc align-self-baseline">
-                    <p class="font-2-m text-w-2" style="margin-top: 20px;">Transforme sua qualidade de vida com a
+                    <p class="font-2-m text-w" style="margin-top: 20px;">Transforme sua qualidade de vida com a
                         <strong class="text-s">Quiropraxia</strong> e <strong class="text-s">Fisioterapia</strong> para
                         aliviar dores e promover uma saúde integral.</p>
                         <a class="botao-consulta font-1-m" href="">
@@ -92,13 +102,13 @@
                         </a>
                 </div>
             </div>
-            <div class="intro-img reveal-img">
+            <!-- <div class="intro-img reveal-img">
                 <img src="assets/img/home/quiro-home.png" alt="">
 
                 <i class="fa-solid fa-plus detail-img-intro" style="top: -50px; left: 100px;"></i>
                 <i class="fa-solid fa-stethoscope detail-img-intro" style="bottom: 0px; left: -50px;"></i>
                 <i class="fa-solid fa-house-medical detail-img-intro" style="right: -80px; top: 200px;"></i>
-            </div>
+            </div> -->
 
         </div>
     </header>
@@ -154,334 +164,367 @@
             </div>
 
             <div class="tratamento-content">
-        
-                <div class="tratamento-carrossel">
                 
-                    <div class="slider-nav">
+                    <div class="swiper">
                         
-                        <!-- quiropraxia -->
-                        <div>
-                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
-                                
-                                <div class="tratamentos-img">
-                                    <img class="w-100 cover" src="./assets/img/tratamentos/quiropraxia.jpg" alt="">
+                        <div class="swiper-wrapper">
+                            <!-- Quiropraxia -->
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="d-flex flex-column bg-white justify-content-between rounded-4 tratamento-slide">
+                                        
+                                        <div class="tratamentos-img">
+                                            <img class="w-100 cover" src="./assets/img/tratamentos/quiropraxia.jpg" alt="">
+                                        </div>
+            
+                                        <div class="d-block p-4">
+                                            <h2 class="font-1-m-b text-center m-0">Quiropraxia</h2>
+                                        </div>
+            
+                                        <div class="d-block px-4">
+                                            <p class="font-2-s text-black-2 m-0 text-center">Alinhamento da coluna para alívio de dores e maior mobilidade.
+                                            </p>
+                                        </div>
+            
+                                        <div class="d-flex align-items-end justify-content-center p-4">
+                                            <a class="tratamento-btn font-2-s text-p" data-bs-toggle="modal" data-bs-target="#quiropraxia">
+                                                Veja mais
+                                            </a>
+                                        </div>
+                                    
+                                    </div>
                                 </div>
-    
-                                <div class="d-block p-4">
-                                    <h2 class="font-1-m-b text-center m-0">Quiropraxia</h2>
-                                </div>
-    
-                                <div class="d-block px-4">
-                                    <p class="font-2-s text-black-2 m-0 text-center">Alinhamento da coluna para alívio de dores e maior mobilidade.
-                                    </p>
-                                </div>
-    
-                                <div class="d-flex align-items-end justify-content-center p-4">
-                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#quiropraxia">
-                                        <a class="font-2-s text-p">Veja mais</a>
-                                    </button>
-                                </div>
-                            
                             </div>
-                        </div>
-                        <!-- FIM quiropraxia -->
-    
-                        <!-- acupuntura -->
-                        <div>
-                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
-                                
-                                <div class="tratamentos-img">
-                                    <img class="w-100 cover" src="./assets/img/tratamentos/acupuntura.jpg" alt="">
-                                </div>
-    
-                                <div class="d-block p-4">
-                                    <h2 class="font-1-m-b text-center m-0">Acupuntura</h2>
-                                </div>
-    
-                                <div class="d-block px-4">
-                                    <p class="font-2-s text-black-2 m-0 text-center">Tratamento milenar para o alívio de dores e o equilíbrio energético.</p>
-                                </div>
-    
-                                <div class="d-flex align-items-end justify-content-center p-4">
-                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#acupuntura">
-                                        <a class="font-2-s text-p">Veja mais</a>
-                                    </button>
-                                </div>
+                            <!-- FIM quiropraxia -->
                             
+                            <!-- acupuntura -->
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="d-flex flex-column bg-white justify-content-between rounded-4 tratamento-slide">
+                                        
+                                        <div class="tratamentos-img">
+                                            <img class="w-100 cover" src="./assets/img/tratamentos/acupuntura.jpg" alt="">
+                                        </div>
+            
+                                        <div class="d-block p-4">
+                                            <h2 class="font-1-m-b text-center m-0">Acupuntura</h2>
+                                        </div>
+            
+                                        <div class="d-block px-4">
+                                            <p class="font-2-s text-black-2 m-0 text-center">Tratamento milenar para o alívio de dores e o equilíbrio energético.</p>
+                                        </div>
+            
+                                        <div class="d-flex align-items-end justify-content-center p-4">
+                                            <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#acupuntura">
+                                                <a class="font-2-s text-p">Veja mais</a>
+                                            </button>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <!-- FIM acupuntura -->
-    
-                        <!-- rpg -->
-                        <div>
-                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
-                                
-                                <div class="tratamentos-img">
-                                    <img class="w-100 cover" src="./assets/img/tratamentos/rpg.jpg" alt="">
+                            <!-- FIM acupuntura -->
+
+                            <!-- RPG -->
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="d-flex flex-column bg-white justify-content-between rounded-4 tratamento-slide">
+                                        
+                                        <div class="tratamentos-img">
+                                            <img class="w-100 cover" src="./assets/img/tratamentos/rpg.jpg" alt="">
+                                        </div>
+            
+                                        <div class="d-block p-4">
+                                            <h2 class="font-1-m-b text-center m-0">RPG</h2>
+                                        </div>
+            
+                                        <div class="d-block px-4">
+                                            <p class="font-2-s text-black-2 m-0 text-center">Reeducação Postural Global para corrigir desequilíbrios e dores crônicas.</p>
+                                        </div>
+            
+                                        <div class="d-flex align-items-end justify-content-center p-4">
+                                            <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#rpg">
+                                                <a class="font-2-s text-p">Veja mais</a>
+                                            </button>
+                                        </div>
+                                    
+                                    </div>
                                 </div>
-    
-                                <div class="d-block p-4">
-                                    <h2 class="font-1-m-b text-center m-0">RPG</h2>
-                                </div>
-    
-                                <div class="d-block px-4">
-                                    <p class="font-2-s text-black-2 m-0 text-center">Reeducação Postural Global para corrigir desequilíbrios e dores crônicas.</p>
-                                </div>
-    
-                                <div class="d-flex align-items-end justify-content-center p-4">
-                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#rpg">
-                                        <a class="font-2-s text-p">Veja mais</a>
-                                    </button>
-                                </div>
+        
+                            </div>
+                            <!-- FIM RPG -->
                             
+                            <!-- hidroterapia -->
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="d-flex flex-column bg-white justify-content-between rounded-4 tratamento-slide">
+                                        
+                                        <div class="tratamentos-img">
+                                            <img class="w-100 cover" src="./assets/img/tratamentos/hidroterapia.jpg" alt="">
+                                        </div>
+            
+                                        <div class="d-block p-4">
+                                            <h2 class="font-1-m-b text-center m-0">Hidroterapia</h2>
+                                        </div>
+            
+                                        <div class="d-block px-4">
+                                            <p class="font-2-s text-black-2 m-0 text-center">Exercícios na água que melhoram a recuperação e a mobilidade.</p>
+                                        </div>
+            
+                                        <div class="d-flex align-items-end justify-content-center p-4">
+                                            <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#hidroterapia">
+                                                <a class="font-2-s text-p">Veja mais</a>
+                                            </button>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+        
+        
                             </div>
-                        </div>
-                        <!-- FIM rpg -->
-    
-                        <!-- hidroterapia -->
-                        <div>
-                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
-                                
-                                <div class="tratamentos-img">
-                                    <img class="w-100 cover" src="./assets/img/tratamentos/hidroterapia.jpg" alt="">
-                                </div>
-    
-                                <div class="d-block p-4">
-                                    <h2 class="font-1-m-b text-center m-0">Hidroterapia</h2>
-                                </div>
-    
-                                <div class="d-block px-4">
-                                    <p class="font-2-s text-black-2 m-0 text-center">Exercícios na água que melhoram a recuperação e a mobilidade.</p>
-                                </div>
-    
-                                <div class="d-flex align-items-end justify-content-center p-4">
-                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#hidroterapia">
-                                        <a class="font-2-s text-p">Veja mais</a>
-                                    </button>
-                                </div>
+                            <!-- FIM hidroterapia -->
                             
+                            <!-- reqpostural -->
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="d-flex flex-column bg-white justify-content-between rounded-4 tratamento-slide">
+                                        
+                                        <div class="tratamentos-img">
+                                            <img class="w-100 cover" src="./assets/img/tratamentos/reequilibropostural.jpg" alt="">
+                                        </div>
+            
+                                        <div class="d-block p-4">
+                                            <h2 class="font-1-m-b text-center m-0">Reequilíbrio Postural</h2>
+                                        </div>
+            
+                                        <div class="d-block px-4">
+                                            <p class="font-2-s text-black-2 m-0 text-center">Técnicas para alinhar e fortalecer a postura corporal.</p>
+                                        </div>
+            
+                                        <div class="d-flex align-items-end justify-content-center p-4">
+                                            <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#reqpostural">
+                                                <a class="font-2-s text-p">Veja mais</a>
+                                            </button>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <!-- FIM hidroterapia -->
-                        
-                        <!-- reqpostural -->
-                        <div>
-                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
-                                
-                                <div class="tratamentos-img">
-                                    <img class="w-100 cover" src="./assets/img/tratamentos/reequilibropostural.jpg" alt="">
+                            <!-- FIM reqpostural -->
+
+                            <!-- palmilhas -->
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="d-flex flex-column bg-white justify-content-between rounded-4 tratamento-slide">
+                                        
+                                        <div class="tratamentos-img">
+                                            <img class="w-100 cover" src="./assets/img/tratamentos/palmilhas.jpg" alt="">
+                                        </div>
+            
+                                        <div class="d-block p-4">
+                                            <h2 class="font-1-m-b text-center m-0">Palmilhas Funcionais</h2>
+                                        </div>
+            
+                                        <div class="d-block px-4">
+                                            <p class="font-2-s text-black-2 m-0 text-center">Correção da pisada e suporte ideal para os pés.
+                                            </p>
+                                        </div>
+            
+                                        <div class="d-flex align-items-end justify-content-center p-4">
+                                            <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#palmilhas">
+                                                <a class="font-2-s text-p">Veja mais</a>
+                                            </button>
+                                        </div>
+                                    
+                                    </div>
                                 </div>
-    
-                                <div class="d-block p-4">
-                                    <h2 class="font-1-m-b text-center m-0">Reequilíbrio Postural</h2>
-                                </div>
-    
-                                <div class="d-block px-4">
-                                    <p class="font-2-s text-black-2 m-0 text-center">Técnicas para alinhar e fortalecer a postura corporal.</p>
-                                </div>
-    
-                                <div class="d-flex align-items-end justify-content-center p-4">
-                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#reqpostural">
-                                        <a class="font-2-s text-p">Veja mais</a>
-                                    </button>
-                                </div>
-                            
                             </div>
-                        </div>
-                        <!-- FIM reqpostural -->
-    
-                        <!-- palmilhas -->
-                        <div>
-                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
-                                
-                                <div class="tratamentos-img">
-                                    <img class="w-100 cover" src="./assets/img/tratamentos/palmilhas.jpg" alt="">
+                            <!-- FIM palmilhas -->
+
+                            <!-- PILATES -->
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="d-flex flex-column bg-white justify-content-between rounded-4 tratamento-slide">
+                                        
+                                        <div class="tratamentos-img">
+                                            <img class="w-100 cover" src="./assets/img/tratamentos/pilates.jpg" alt="">
+                                        </div>
+            
+                                        <div class="d-block p-4">
+                                            <h2 class="font-1-m-b text-center m-0">Pilates</h2>
+                                        </div>
+            
+                                        <div class="d-block px-4">
+                                            <p class="font-2-s text-black-2 m-0 text-center">Fortalecimento do corpo com foco no equilíbrio, flexibilidade e força.
+                                            </p>
+                                        </div>
+            
+                                        <div class="d-flex align-items-end justify-content-center p-4">
+                                            <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#pilates">
+                                                <a class="font-2-s text-p">Veja mais</a>
+                                            </button>
+                                        </div>
+                                    
+                                    </div>
                                 </div>
-    
-                                <div class="d-block p-4">
-                                    <h2 class="font-1-m-b text-center m-0">Palmilhas Funcionais</h2>
-                                </div>
-    
-                                <div class="d-block px-4">
-                                    <p class="font-2-s text-black-2 m-0 text-center">Correção da pisada e suporte ideal para os pés.
-                                    </p>
-                                </div>
-    
-                                <div class="d-flex align-items-end justify-content-center p-4">
-                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#palmilhas">
-                                        <a class="font-2-s text-p">Veja mais</a>
-                                    </button>
-                                </div>
-                            
+        
                             </div>
-                        </div>
-                        <!-- FIM palmilhas -->
-    
-                        <!-- pilates -->
-                        <div>
-                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
-                                
-                                <div class="tratamentos-img">
-                                    <img class="w-100 cover" src="./assets/img/tratamentos/pilates.jpg" alt="">
+                            <!-- FIM PILATES -->
+
+                            <!-- fisio espec -->
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="d-flex flex-column bg-white justify-content-between rounded-4 tratamento-slide">
+                                        
+                                        <div class="tratamentos-img">
+                                            <img class="w-100 cover" src="./assets/img/tratamentos/imagemfisio.jpg" alt="">
+                                        </div>
+            
+                                        <div class="d-block p-4">
+                                            <h2 class="font-1-m-b text-center m-0">Fisioterapia Especializada</h2>
+                                        </div>
+            
+                                        <div class="d-block px-4">
+                                            <p class="font-2-s text-black-2 m-0 text-center">Tratamentos personalizados para promover a reabilitação completa.
+                                            </p>
+                                        </div>
+            
+                                        <div class="d-flex align-items-end justify-content-center p-4">
+                                            <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#fisioespec">
+                                                <a class="font-2-s text-p">Veja mais</a>
+                                            </button>
+                                        </div>
+                                    
+                                    </div>
                                 </div>
-    
-                                <div class="d-block p-4">
-                                    <h2 class="font-1-m-b text-center m-0">Pilates</h2>
-                                </div>
-    
-                                <div class="d-block px-4">
-                                    <p class="font-2-s text-black-2 m-0 text-center">Fortalecimento do corpo com foco no equilíbrio, flexibilidade e força.
-                                    </p>
-                                </div>
-    
-                                <div class="d-flex align-items-end justify-content-center p-4">
-                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#pilates">
-                                        <a class="font-2-s text-p">Veja mais</a>
-                                    </button>
-                                </div>
-                            
                             </div>
-                        </div>
-                        <!-- FIM pilates -->
-    
-                        <!-- fisio espec -->
-                        <div>
-                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
-                                
-                                <div class="tratamentos-img">
-                                    <img class="w-100 cover" src="./assets/img/tratamentos/imagemfisio.jpg" alt="">
+                            <!-- FIM fisio espec -->
+
+                            <!-- recup atletasc -->
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="d-flex flex-column bg-white justify-content-between rounded-4 tratamento-slide">
+                                        
+                                        <div class="tratamentos-img">
+                                            <img class="w-100 cover" src="./assets/img/tratamentos/atletas.jpg" alt="">
+                                        </div>
+            
+                                        <div class="d-block p-4">
+                                            <h2 class="font-1-m-b text-center m-0">Recuperação Avançada de Atletas</h2>
+                                        </div>
+            
+                                        <div class="d-block px-4">
+                                            <p class="font-2-s text-black-2 m-0 text-center">Técnicas modernas para acelerar o retorno ao esporte.
+                                            </p>
+                                        </div>
+            
+                                        <div class="d-flex align-items-end justify-content-center p-4">
+                                            <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#recupatletas">
+                                                <a class="font-2-s text-p">Veja mais</a>
+                                            </button>
+                                        </div>
+                                    
+                                    </div>
                                 </div>
-    
-                                <div class="d-block p-4">
-                                    <h2 class="font-1-m-b text-center m-0">Fisioterapia Especializada</h2>
-                                </div>
-    
-                                <div class="d-block px-4">
-                                    <p class="font-2-s text-black-2 m-0 text-center">Tratamentos personalizados para promover a reabilitação completa.
-                                    </p>
-                                </div>
-    
-                                <div class="d-flex align-items-end justify-content-center p-4">
-                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#fisioespec">
-                                        <a class="font-2-s text-p">Veja mais</a>
-                                    </button>
-                                </div>
-                            
                             </div>
-                        </div>
-                        <!-- FIM fisio espec -->
-    
-                        <!-- recup atletas -->
-                        <div>
-                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
-                                
-                                <div class="tratamentos-img">
-                                    <img class="w-100 cover" src="./assets/img/tratamentos/atletas.jpg" alt="">
+                            <!-- FIM recup atletas -->
+
+                            <!-- baropodometria -->
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="d-flex flex-column bg-white justify-content-between rounded-4 tratamento-slide">
+                                        
+                                        <div class="tratamentos-img">
+                                            <img class="w-100 cover" src="./assets/img/tratamentos/baropodometria.jpg" alt="">
+                                        </div>
+            
+                                        <div class="d-block p-4">
+                                            <h2 class="font-1-m-b text-center m-0">Baropodometria</h2>
+                                        </div>
+            
+                                        <div class="d-block px-4">
+                                            <p class="font-2-s text-black-2 m-0 text-center">Análise precisa da pressão plantar para correção postural.
+                                            </p>
+                                        </div>
+            
+                                        <div class="d-flex align-items-end justify-content-center p-4">
+                                            <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#baropodometria">
+                                                <a class="font-2-s text-p">Veja mais</a>
+                                            </button>
+                                        </div>
+                                    
+                                    </div>
                                 </div>
-    
-                                <div class="d-block p-4">
-                                    <h2 class="font-1-m-b text-center m-0">Recuperação Avançada de Atletas</h2>
-                                </div>
-    
-                                <div class="d-block px-4">
-                                    <p class="font-2-s text-black-2 m-0 text-center">Técnicas modernas para acelerar o retorno ao esporte.
-                                    </p>
-                                </div>
-    
-                                <div class="d-flex align-items-end justify-content-center p-4">
-                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#recupatletas">
-                                        <a class="font-2-s text-p">Veja mais</a>
-                                    </button>
-                                </div>
-                            
                             </div>
-                        </div>
-                        <!-- FIM recup atletas -->
-    
-                        <!-- baropodometria -->
-                        <div>
-                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
-                                
-                                <div class="tratamentos-img">
-                                    <img class="w-100 cover" src="./assets/img/tratamentos/baropodometria.jpg" alt="">
+                            <!-- FIM baropodometria -->
+
+                            <!-- posturologia -->
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="d-flex flex-column bg-white justify-content-between rounded-4 tratamento-slide">
+                                        
+                                        <div class="tratamentos-img">
+                                            <img class="w-100 cover" src="./assets/img/tratamentos/posturologia.jpg" alt="">
+                                        </div>
+            
+                                        <div class="d-block p-4">
+                                            <h2 class="font-1-m-b text-center m-0">Posturologia</h2>
+                                        </div>
+            
+                                        <div class="d-block px-4">
+                                            <p class="font-2-s text-black-2 m-0 text-center">Avaliação global do corpo para melhorar a postura e prevenir lesões.
+                                            </p>
+                                        </div>
+            
+                                        <div class="d-flex align-items-end justify-content-center p-4">
+                                            <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#posturologia">
+                                                <a class="font-2-s text-p">Veja mais</a>
+                                            </button>
+                                        </div>
+                                    
+                                    </div>
                                 </div>
-    
-                                <div class="d-block p-4">
-                                    <h2 class="font-1-m-b text-center m-0">Baropodometria</h2>
-                                </div>
-    
-                                <div class="d-block px-4">
-                                    <p class="font-2-s text-black-2 m-0 text-center">Análise precisa da pressão plantar para correção postural.
-                                    </p>
-                                </div>
-    
-                                <div class="d-flex align-items-end justify-content-center p-4">
-                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#baropodometria">
-                                        <a class="font-2-s text-p">Veja mais</a>
-                                    </button>
-                                </div>
-                            
+        
                             </div>
-                        </div>
-                        <!-- FIM baropodometria -->
-    
-                        <!-- posturologia -->
-                        <div>
-                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
-                                
-                                <div class="tratamentos-img">
-                                    <img class="w-100 cover" src="./assets/img/tratamentos/posturologia.jpg" alt="">
+                            <!-- FIM posturologia -->
+
+                            <!-- Osteopatia -->
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="d-flex flex-column bg-white justify-content-between rounded-4 tratamento-slide">
+                                        
+                                        <div class="tratamentos-img">
+                                            <img class="w-100 cover" src="./assets/img/tratamentos/osteopatia.jpg" alt="">
+                                        </div>
+            
+                                        <div class="d-block p-4">
+                                            <h2 class="font-1-m-b text-center m-0">Osteopatia</h2>
+                                        </div>
+            
+                                        <div class="d-block px-4">
+                                            <p class="font-2-s text-black-2 m-0 text-center">Terapia manual para restaurar o equilíbrio estrutural do corpo.
+                                            </p>
+                                        </div>
+            
+                                        <div class="d-flex align-items-end justify-content-center p-4">
+                                            <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#osteopatia">
+                                                <a class="font-2-s text-p">Veja mais</a>
+                                            </button>
+                                        </div>
+                                    
+                                    </div>
                                 </div>
-    
-                                <div class="d-block p-4">
-                                    <h2 class="font-1-m-b text-center m-0">Posturologia</h2>
-                                </div>
-    
-                                <div class="d-block px-4">
-                                    <p class="font-2-s text-black-2 m-0 text-center">Avaliação global do corpo para melhorar a postura e prevenir lesões.
-                                    </p>
-                                </div>
-    
-                                <div class="d-flex align-items-end justify-content-center p-4">
-                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#posturologia">
-                                        <a class="font-2-s text-p">Veja mais</a>
-                                    </button>
-                                </div>
-                            
+        
                             </div>
+                            <!-- FIM Osteopatia -->
                         </div>
-                        <!-- FIM posturologia -->
-    
-                        <!-- Osteopatia -->
-                        <div>
-                            <div class="d-flex flex-column bg-white justify-content-between rounded-4">
-                                
-                                <div class="tratamentos-img">
-                                    <img class="w-100 cover" src="./assets/img/tratamentos/osteopatia.jpg" alt="">
-                                </div>
-    
-                                <div class="d-block p-4">
-                                    <h2 class="font-1-m-b text-center m-0">Osteopatia</h2>
-                                </div>
-    
-                                <div class="d-block px-4">
-                                    <p class="font-2-s text-black-2 m-0 text-center">Terapia manual para restaurar o equilíbrio estrutural do corpo.
-                                    </p>
-                                </div>
-    
-                                <div class="d-flex align-items-end justify-content-center p-4">
-                                    <button class="tratamento-btn" data-bs-toggle="modal" data-bs-target="#osteopatia">
-                                        <a class="font-2-s text-p">Veja mais</a>
-                                    </button>
-                                </div>
-                            
-                            </div>
-                        </div>
-                        <!-- FIM Osteopatia -->
-    
-    
+                      
+                          <!-- Navigation -->
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-button-next"></div>
+                    
                     </div>
-                </div>
+                
             </div>
         </div>
 
@@ -489,47 +532,105 @@
     </section>
     <!-- fim tratamentos -->
 
-    <!-- contador -->
-    <section id="counts" class="bg-w-2 counts">
-    <div class="container py-6 mx-auto">
 
-        <div class="row counters">
+    <!-- BENEFICIOS -->
+    <section id="tratamentos" class="bg-w-2">
+        <div class="container">
+            <div class="row justify-content-center align-items-end" id="metodologia">
+                
+                <div class="about-img col-lg-6">
+                    <img class="rounded" src="assets/img/drenatoweb.png" alt="" style="width: 130%;">
+                </div>
 
-            <div class="col-lg-3 col-6 text-center py-4">
-                <i class="fa-solid fa-user-group font-1-xxl gradient-secondary"></i>
-                <br>
-                <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1"
-                    style="font-weight: 700;" class="purecounter font-1-m fs-1 text-p"></span>
-                <p class="text-p font-2-m m-0">Clientes Atendidos</p>
-            </div>
+                <div class="bg-w my-5 rounded-4 about-text col-lg-6 p-0 shadow-lg">
+                    
+                    <div class="bg-p p-4" style="border-radius: 1rem 1rem 0 0;">
+                        <h1 class="font-1-l text-center text-w m-0 "><strong>Benefícios</strong></h1>
+                    </div>
 
-            <div class="col-lg-3 col-6 text-center py-4">
-                <i class="fa-solid fa-calendar-days font-1-xxl  gradient-secondary"></i>
-                <br>
-                <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1"
-                    style="font-weight: 700;" class="purecounter font-1-m fs-1 text-p"></span>
-                <p class="text-p font-2-m m-0">Anos de Experiência</p>
-            </div>
 
-            <div class="col-lg-3 col-6 text-center py-4">
-                <i class="fa-solid fa-square-check font-1-xxl  gradient-secondary"></i>
-                <br>
-                <span data-purecounter-start="0" data-purecounter-end="13000" data-purecounter-duration="1"
-                    style="font-weight: 700;" class="purecounter font-1-m fs-1 text-p"></span>
-                <p class="text-p font-2-m m-0">Sessões Realizadas</p>
-            </div>
+                    <div class="p-4">
+    
+                        <ul class="text-p font-1-l mb-2 text-s">
+                            <li class=""><strong class="text-p">Tecnologia de Ponta</strong></li>
+                        </ul>
+                        <p class="text-p font-2-l m-0">Utilizamos equipamentos modernos e técnicas avançadas para oferecer tratamentos mais eficazes e seguros.</p>
+                        <br><br>
+                        
+                        <ul class="text-p font-1-l mb-2 text-s">
+                            <li class=""><strong class="text-p">Profissionais Especializados</strong></li>
+                        </ul>
+                        <p class="text-p font-2-l m-0">Nossa equipe é formada por fisioterapeutas experientes, comprometidos com a sua saúde e bem-estar.</p>
+                        <br><br>
+                        
+                        <ul class="text-p font-1-l mb-2 text-s">
+                            <li class=""><strong class="text-p">Tratamentos Personalizados</strong></li>
+                        </ul>
+                        <p class="text-p font-2-l m-0">Cada paciente recebe um plano exclusivo, desenvolvido de acordo com suas necessidades e objetivos.</p>
+                        <br><br>
+                        
+                        <ul class="text-p font-1-l mb-2 text-s">
+                            <li class=""><strong class="text-p">Resultados Comprovados</strong></li>
+                        </ul>
+                        <p class="text-p font-2-l m-0">Casos reais de pacientes que superaram a coxartrose e conquistaram mais qualidade de vida.</p>
+                        <br>
 
-            <div class="col-lg-3 col-6 text-center py-4">
-                <i class="fa-solid fa-medal font-1-xxl gradient-secondary"></i>
-                <br>
-                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" data-purecounter-suffix="%" style="font-weight: 700;"  class="purecounter font-1-m fs-1  text-p">%</span>
-                <p class="text-p font-2-m m-0">Indice de Aprovação</p>
+                        <div class="my-4 d-flex justify-content-center">
+                            <a class="tratamento-btn text-p font-2-l">Entre em contato conosco!</a>
+                        </div>
+                    </div>
+
+                    
+                </div>
             </div>
         </div>
 
-    </div>
+
     </section>
-    <!-- fim contador -->
+    <!-- fim BENEFICIOS -->
+
+
+    <!-- contador -->
+    <section id="counts" class="bg-p counts">
+        <div class="container py-6 mx-auto">
+    
+            <div class="row counters">
+    
+                <div class="col-lg-3 col-6 text-center py-4">
+                    <i class="fa-solid fa-user-group font-1-xxl gradient-secondary"></i>
+                    <br>
+                    <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1"
+                        style="font-weight: 700;" class="purecounter font-1-m fs-1 text-w"></span>
+                    <p class="text-w font-2-m m-0">Clientes Atendidos</p>
+                </div>
+    
+                <div class="col-lg-3 col-6 text-center py-4">
+                    <i class="fa-solid fa-calendar-days font-1-xxl  gradient-secondary"></i>
+                    <br>
+                    <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1"
+                        style="font-weight: 700;" class="purecounter font-1-m fs-1 text-w"></span>
+                    <p class="text-w font-2-m m-0">Anos de Experiência</p>
+                </div>
+    
+                <div class="col-lg-3 col-6 text-center py-4">
+                    <i class="fa-solid fa-square-check font-1-xxl  gradient-secondary"></i>
+                    <br>
+                    <span data-purecounter-start="0" data-purecounter-end="13000" data-purecounter-duration="1"
+                        style="font-weight: 700;" class="purecounter font-1-m fs-1 text-w"></span>
+                    <p class="text-w font-2-m m-0">Sessões Realizadas</p>
+                </div>
+    
+                <div class="col-lg-3 col-6 text-center py-4">
+                    <i class="fa-solid fa-medal font-1-xxl gradient-secondary"></i>
+                    <br>
+                    <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" data-purecounter-suffix="%" style="font-weight: 700;"  class="purecounter font-1-m fs-1  text-w">%</span>
+                    <p class="text-w font-2-m m-0">Indice de Aprovação</p>
+                </div>
+            </div>
+    
+        </div>
+        </section>
+        <!-- fim contador -->
 
     <!-- sessão metodologia -->
     <section class="bg-white">
@@ -803,7 +904,7 @@
     <!-- FIM MENU LATERAL -->
 
     <!-- End Counts Section -->
-    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/reveal.js" defer></script>
     <script src="./js/script.js" defer></script>
     
@@ -813,14 +914,38 @@
     <!-- SWIPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
-    <!-- SLICK -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- PURECOUNTER -->
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <script>
         new PureCounter();
     </script>
+
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+    
+        const swiper = new Swiper('.swiper', {
+        loop: true,
+        direction: 'horizontal',
+        slidesPerView: 3,
+        breakpoints: {
+            1024: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            480: {
+                slidesPerView: 1,
+            }
+            },
+        spaceBetween: 40,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
+    
 
 </body>
 

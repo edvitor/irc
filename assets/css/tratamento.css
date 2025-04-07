@@ -19,10 +19,8 @@
   object-fit: cover;
 }
 
-.case-slide{
-  padding: 40px;
-  border-radius: 4px;
-  background-color: #fff;
+.tratamento-slide{
+  height: 450px;
 }
 
 
@@ -42,94 +40,4 @@
 
 .tratamento-btn i{
   margin-left: 5px;
-}
-
-
-/* SLICK JS */
-
-.slide-for{
-  background: #fff;
-}
-
-.slick-slide {
-  transition: transform 0.3s ease;
-  margin: 0 30px;
-}
-
-@media (min-width: 993px){
-  .slick-track{
-    margin: 40px 0;
-  }
-  .slick-center {
-    transform: scale(1.2); 
-    z-index: 1;
-    }
-}
-
-.slick-list {
-padding: 0 15px;
-}
-
-
-.slick-dots li button::before {
-  margin-top: 20px;
-  color: #fff !important; 
-  font-size: 8px !important; 
-  opacity: 0.5;
-}
-
-/* Alterar a cor das bolinhas ativas */
-.slick-dots li.slick-active button::before {
-  color: #fff !important;
-  opacity: 1;
-}
-
-.slick-prev::before,
-.slick-next::before  {
-  content: "" !important;
-}
-
-.slick-prev, .slick-next {
-  font-size: 0;
-  background: none;
-  border: none;
-}
-
-.slick-prev i, .slick-next i {
-  font-size: 1.5rem;
-  color: var(--cor-secundaria);
-}
-
-
-@media (max-width:580px){
-  .slick-arrow{
-    margin: 0 0.8rem;
-  }
-   .slick-prev{
-    left: -6px !important;
-    z-index: 1000;
-   }
-   .slick-next{
-    right: -6px !important;
-    z-index: 1000;
-   }
-}
-
-
-@media (max-width:470px){
-  .autoplay-carrossel img{
-      width: 250px;
-  }
-}
-
-@media (max-width:440px){
-  .autoplay-carrossel img{
-      width: 200px;
-  }
-}
-
-@media (max-width:375px){
-  .autoplay-carrossel img{
-      width: 200px;
-  }
 }
