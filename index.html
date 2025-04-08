@@ -75,21 +75,40 @@
 
     <!-- Masthead-->
     <header class="introducao" id="home">
-        <div class="intro-content intro-bg d-flex justify-content-center">
-            
-            <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-touch="false" data-bs-ride="carousel">
-            
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./assets/img/introducao.jpg" class="intro-img" style="object-position: center -140px;" alt="...">
-                      </div>
-                  <div class="carousel-item">
-                    <img src="./assets/img/introducao-2.jpg" class="intro-img" style="object-position: center -200px;" alt="...">
-                  </div>
-                </div>
-            </div>
+        <style>
+            header.introducao {
+            position: relative;
+            overflow: hidden;
+        }
 
-            <div class="container position-absolute top-0 justify-content-center px-lg-5 text-left reveal-txt" style="margin-top:90px; z-index: 3 !important">
+        .swiper {
+            height: 100%;
+            width: 100%;
+        }
+
+        .swiper-slide {
+            height: 100%;
+            width: 100%;
+        }
+
+        .img-slide {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        </style>
+        
+        <!-- Swiper Background -->
+        <div class="swiper swiper-header h-100 w-100 position-absolute top-0 start-0" style="z-index: 1;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./assets/img/introducao.jpg" class="img-slide" alt=""></div>
+                <div class="swiper-slide"><img src="./assets/img/introducao-2.jpg" class="img-slide" alt=""></div>
+            </div>
+        </div>
+
+        <div class="intro-content intro-bg d-flex justify-content-center">
+
+            <div class="container d-flex row px-lg-5 text-left reveal-txt" style="z-index: 3 !important">
                 <div class="align-self-end">
                     <h1 class="font-1-xxl text-w">A Solução Natural para Transformar sua Qualidade de Vida!</h1>
                 </div>
@@ -165,7 +184,7 @@
 
             <div class="tratamento-content">
                 
-                    <div class="swiper">
+                    <div class="swiper swiper-tratamentos">
                         
                         <div class="swiper-wrapper">
                             <!-- Quiropraxia -->
@@ -534,54 +553,94 @@
 
 
     <!-- BENEFICIOS -->
-    <section id="tratamentos" class="bg-w-2">
+    <section id="beneficios" class="bg-w-2">
         <div class="container">
-            <div class="row justify-content-center align-items-end" id="metodologia">
+            <div class="row justify-content-center align-items-center g-5" id="beneficios">
                 
-                <div class="about-img col-lg-6">
-                    <img class="rounded" src="assets/img/drenatoweb.png" alt="" style="width: 130%;">
-                </div>
-
-                <div class="bg-w my-5 rounded-4 about-text col-lg-6 p-0 shadow-lg">
-                    
-                    <div class="bg-p p-4" style="border-radius: 1rem 1rem 0 0;">
-                        <h1 class="font-1-l text-center text-w m-0 "><strong>Benefícios</strong></h1>
-                    </div>
-
-
-                    <div class="p-4">
-    
-                        <ul class="text-p font-1-l mb-2 text-s">
-                            <li class=""><strong class="text-p">Tecnologia de Ponta</strong></li>
-                        </ul>
-                        <p class="text-p font-2-l m-0">Utilizamos equipamentos modernos e técnicas avançadas para oferecer tratamentos mais eficazes e seguros.</p>
-                        <br><br>
-                        
-                        <ul class="text-p font-1-l mb-2 text-s">
-                            <li class=""><strong class="text-p">Profissionais Especializados</strong></li>
-                        </ul>
-                        <p class="text-p font-2-l m-0">Nossa equipe é formada por fisioterapeutas experientes, comprometidos com a sua saúde e bem-estar.</p>
-                        <br><br>
-                        
-                        <ul class="text-p font-1-l mb-2 text-s">
-                            <li class=""><strong class="text-p">Tratamentos Personalizados</strong></li>
-                        </ul>
-                        <p class="text-p font-2-l m-0">Cada paciente recebe um plano exclusivo, desenvolvido de acordo com suas necessidades e objetivos.</p>
-                        <br><br>
-                        
-                        <ul class="text-p font-1-l mb-2 text-s">
-                            <li class=""><strong class="text-p">Resultados Comprovados</strong></li>
-                        </ul>
-                        <p class="text-p font-2-l m-0">Casos reais de pacientes que superaram a coxartrose e conquistaram mais qualidade de vida.</p>
-                        <br>
-
-                        <div class="my-4 d-flex justify-content-center">
-                            <a class="tratamento-btn text-p font-2-l">Entre em contato conosco!</a>
+                <div class="col-lg-6">
+                    <div class="swiper swiper-beneficios">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="depoimento m-2">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                    <br><br>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <br>
+                                    
+                                    <div class="depoimento-perfil">
+                                        <img src="./assets/img/avatar.jpg" alt="">
+                                        <div class="depoimento-nome">
+                                            <h3 class="font-1-l">Edson Vitor</h3>
+                                            
+                                        </div>
+                                    </div>
+                
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="depoimento m-2">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                    <br><br>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <br>
+                                    
+                                    <div class="depoimento-perfil">
+                                        <img src="./assets/img/avatar.jpg" alt="">
+                                        <div class="depoimento-nome">
+                                            <h3 class="font-1-l">Edson Vitor</h3>
+                                            
+                                        </div>
+                                    </div>
+                
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    
                 </div>
+
+                <div class="col-lg-6">
+                    <div class="bg-w my-5 rounded-4 about-text p-0 shadow-lg">
+                    
+                        <div class="bg-p p-4" style="border-radius: 1rem 1rem 0 0;">
+                            <h1 class="font-1-l text-center text-w m-0 "><strong>Benefícios</strong></h1>
+                        </div>
+    
+                        <div class="p-4">
+        
+                            <ul class="text-p font-1-l mb-2 text-s">
+                                <li class=""><strong class="text-p">Tecnologia de Ponta</strong></li>
+                            </ul>
+                            <p class="text-p font-2-l m-0">Utilizamos equipamentos modernos e técnicas avançadas para oferecer tratamentos mais eficazes e seguros.</p>
+                            <br><br>
+                            
+                            <ul class="text-p font-1-l mb-2 text-s">
+                                <li class=""><strong class="text-p">Profissionais Especializados</strong></li>
+                            </ul>
+                            <p class="text-p font-2-l m-0">Nossa equipe é formada por fisioterapeutas experientes, comprometidos com a sua saúde e bem-estar.</p>
+                            <br><br>
+                            
+                            <ul class="text-p font-1-l mb-2 text-s">
+                                <li class=""><strong class="text-p">Tratamentos Personalizados</strong></li>
+                            </ul>
+                            <p class="text-p font-2-l m-0">Cada paciente recebe um plano exclusivo, desenvolvido de acordo com suas necessidades e objetivos.</p>
+                            <br><br>
+                            
+                            <ul class="text-p font-1-l mb-2 text-s">
+                                <li class=""><strong class="text-p">Resultados Comprovados</strong></li>
+                            </ul>
+                            <p class="text-p font-2-l m-0">Casos reais de pacientes que superaram a coxartrose e conquistaram mais qualidade de vida.</p>
+                            <br>
+    
+                            <div class="my-4 d-flex justify-content-center">
+                                <a class="tratamento-btn text-p font-2-l">Entre em contato conosco!</a>
+                            </div>
+                        </div>
+    
+                        
+                    </div>
+                </div>
+
+                
             </div>
         </div>
 
@@ -923,7 +982,7 @@
     <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
     
-        const swiper = new Swiper('.swiper', {
+        const swiper = new Swiper('.swiper-tratamentos', {
         loop: true,
         direction: 'horizontal',
         slidesPerView: 3,
@@ -944,6 +1003,25 @@
             prevEl: '.swiper-button-prev',
         },
         });
+
+        const swiperHeader = new Swiper('.swiper-header', {
+            loop: true,
+            autoplay: {
+            delay: 5000,
+            },
+            effect: 'fade',
+            allowTouchMove: false,
+        });
+
+        const swiperBeneficios = new Swiper('.swiper-beneficios', {
+            loop: true,
+            direction: 'horizontal',
+            autoplay: {
+            delay: 5000,
+            },
+            slidesPerView: 1,
+        });
+
     </script>
     
 
